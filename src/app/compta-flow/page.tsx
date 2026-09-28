@@ -13,7 +13,7 @@ export default function ComptaFlowPage() {
       title="Comptabilité SYSCOHADA automatisée"
       subtitle="Tenue de la comptabilité sous référentiel SYSCOHADA révisé. L'OCR extrait automatiquement les données de vos factures pour générer les écritures, et les rapprochements bancaires multi-banques se réalisent en quelques minutes."
       icon="calc"
-      logoSrc="/logos/compta-flow.png"
+      logoSrc="/logos/compta-flow.webp"
       moduleColor="#1E40AF"
       features={[
         { icon: "book", title: "Plan SYSCOHADA révisé pré-configuré", text: "Imputations proposées automatiquement selon le référentiel OHADA, sans erreur d'écriture." },

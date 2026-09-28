@@ -51,9 +51,9 @@ type Props = {
 
 // 5 modules avec leurs couleurs de charte officielles
 const ALL_MODULES = [
-  { id: "sell-flow", name: "Sell Flow", desc: "Facturation FNE-DGI, caisse & stocks", href: "/sell-flow", icon: ShoppingCart, color: "#0052FF" },
+  { id: "sell-flow", name: "Sell Flow", desc: "Facturation FNE-DGI, caisse & stocks", href: "/sell-flow", icon: ShoppingCart, color: "#003061" },
   { id: "compta-flow", name: "Compta Flow", desc: "Comptabilité SYSCOHADA & banques", href: "/compta-flow", icon: Calculator, color: "#1E40AF" },
-  { id: "rh-flow", name: "RH Flow", desc: "Paie ivoirienne ITS/CNPS & pointage", href: "/rh-flow", icon: Users, color: "#0891B2" },
+  { id: "rh-flow", name: "RH Flow", desc: "Paie ivoirienne ITS/CNPS & pointage", href: "/rh-flow", icon: Users, color: "#263e88" },
   { id: "legal-flow", name: "Legal Flow", desc: "Bouclier fiscal & alertes WhatsApp", href: "/legal-flow", icon: Scale, color: "#7C3AED" },
   { id: "task-flow", name: "Task Flow", desc: "CRM & contrats de mission automatisés", href: "/task-flow", icon: LayoutDashboard, color: "#334155" },
 ];
@@ -156,11 +156,12 @@ export default function ProductPageTemplate({
             <div className="relative flex items-center justify-center">
               <div className="relative size-64 sm:size-80 flex items-center justify-center">
                 <Image
-                  src={logoSrc}
+                  src={logoSrc.endsWith(".png") ? logoSrc.replace(".png", ".webp") : logoSrc}
                   alt={appName}
                   width={280}
                   height={280}
                   priority
+                  quality={80}
                   className="object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)]"
                 />
               </div>

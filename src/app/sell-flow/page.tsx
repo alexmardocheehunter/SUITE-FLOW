@@ -13,8 +13,8 @@ export default function SellFlowPage() {
       title="Ventes et facturation FNE"
       subtitle="Gestion des ventes, des achats, des stocks multi-magasins et de la caisse. Émettez vos factures conformes à la facturation normalisée (FNE-DGI) avec génération instantanée du QR code fiscal, sans double saisie."
       icon="cart"
-      logoSrc="/logos/sell-flow.png"
-      moduleColor="#0052FF"
+      logoSrc="/logos/sell-flow.webp"
+      moduleColor="#003061"
       features={[
         { icon: "qr", title: "Facturation FNE certifiée DGI", text: "QR code et sticker fiscal générés automatiquement sur chaque facture. Zéro double saisie sur le portail DGI." },
         { icon: "store", title: "Multi-caisses & multi-magasins", text: "Pilotez vos points de vente d'Abidjan à l'intérieur du pays depuis une interface tactile unique, en magasin comme sur le terrain." },

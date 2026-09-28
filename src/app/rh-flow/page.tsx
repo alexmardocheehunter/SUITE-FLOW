@@ -13,8 +13,8 @@ export default function RhFlowPage() {
       title="Paie et gestion sociale ivoirienne"
       subtitle="Gestion de la paie, du personnel, des congés et du pointage mobile (QR code/GPS). Calculez les bulletins de salaire, l'ITS, la CNPS et la CMU selon la législation ivoirienne en vigueur pour sécuriser vos déclarations."
       icon="users"
-      logoSrc="/logos/rh-flow.png"
-      moduleColor="#0891B2"
+      logoSrc="/logos/rh-flow.webp"
+      moduleColor="#263e88"
       features={[
         { icon: "badge", title: "Bulletins conformes Code du Travail", text: "Des bulletins de salaire nets et opposables, pour les PME de 5 à plus de 500 salariés." },
         { icon: "percent", title: "Calcul automatique ITS (barème DGI)", text: "Retenues à la source calculées avec exactitude sur les barèmes fiscaux ivoiriens en vigueur." },

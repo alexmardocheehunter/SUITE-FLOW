@@ -12,6 +12,7 @@ const PRODUITS = [
 const SITE = [
   { href: "/#ecosysteme", label: "Écosystème" },
   { href: "/#tarifs", label: "Tarifs" },
+  { href: "/comparatif", label: "Comparatif vs Concurrents" },
   { href: "/a-propos", label: "À propos" },
   { href: "/contact", label: "Contact" },
   { href: "/#ecosysteme", label: "Réseau ONECCA Côte d'Ivoire" },
@@ -40,10 +41,11 @@ export default function SiteFooter() {
           <div className="flex items-center gap-3">
             <div className="relative size-10 shrink-0">
               <Image
-                src="/icon landing page.png"
+                src="/icon-landing-page.webp"
                 alt="Logo Suite Flow"
                 width={40}
                 height={40}
+                quality={80}
                 className="size-full object-contain drop-shadow-[0_4px_12px_rgba(0,82,255,0.4)]"
               />
             </div>

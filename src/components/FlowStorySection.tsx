@@ -23,10 +23,10 @@ const MODULES = [
     id: "sell-flow",
     step: "01",
     name: "Sell Flow",
-    accentColor: "#0052FF", // Bleu Électrique
-    checkClass: "text-[#0052FF]",
-    linkClass: "text-[#0052FF] hover:text-[#0038D1]",
-    ringClass: "ring-[#0052FF]",
+    accentColor: "#003061", // Bleu Marine Officiel
+    checkClass: "text-[#003061]",
+    linkClass: "text-[#003061] hover:text-[#001f42]",
+    ringClass: "ring-[#003061]",
     title: "Ventes et facturation FNE",
     subtitle:
       "Gestion des ventes, des achats, des stocks multi-magasins et de la caisse. Émettez vos factures conformes à la facturation normalisée (FNE-DGI) avec génération instantanée du QR code fiscal, sans double saisie.",
@@ -43,8 +43,8 @@ const MODULES = [
     },
     dashboardTitle: "Sell Flow · Gestion Commerciale & Caisse FNE",
     badge: "Période 2026",
-    imageMain: "/screenshots/sell-dashboard.png",
-    logo: "/logos/sell-flow.png",
+    imageMain: "/screenshots/sell-dashboard.webp",
+    logo: "/logos/sell-flow.webp",
   },
   {
     id: "compta-flow",
@@ -70,17 +70,17 @@ const MODULES = [
     },
     dashboardTitle: "Flow Compta · Pilotage Performance & SYSCOHADA",
     badge: "Solde Consolidé",
-    imageMain: "/screenshots/compta-dashboard.png",
-    logo: "/logos/compta-flow.png",
+    imageMain: "/screenshots/compta-dashboard.webp",
+    logo: "/logos/compta-flow.webp",
   },
   {
     id: "rh-flow",
     step: "03",
     name: "RH Flow",
-    accentColor: "#0891B2", // Cyan Océan
-    checkClass: "text-[#0891B2]",
-    linkClass: "text-[#0891B2] hover:text-cyan-800",
-    ringClass: "ring-[#0891B2]",
+    accentColor: "#263e88", // Indigo Royal Officiel
+    checkClass: "text-[#263e88]",
+    linkClass: "text-[#263e88] hover:text-[#18285c]",
+    ringClass: "ring-[#263e88]",
     title: "Paie et gestion sociale",
     subtitle:
       "Gestion de la paie, du personnel, des congés et du pointage mobile (QR code/GPS). Calculez les bulletins de salaire, l'ITS, la CNPS et la CMU selon la législation ivoirienne en vigueur pour sécuriser vos déclarations.",
@@ -97,8 +97,8 @@ const MODULES = [
     },
     dashboardTitle: "RH Flow · Traitement de la Paie Mensuelle",
     badge: "Barème 2026",
-    imageMain: "/screenshots/rh-paie.png",
-    logo: "/logos/rh-flow.png",
+    imageMain: "/screenshots/rh-paie.webp",
+    logo: "/logos/rh-flow.webp",
   },
   {
     id: "legal-flow",
@@ -124,8 +124,8 @@ const MODULES = [
     },
     dashboardTitle: "Legal Flow · Portail de Conformité Fiscale & Sociale",
     badge: "DGI / CNPS / CMU",
-    imageMain: "/screenshots/legal.png",
-    logo: "/logos/legal-flow.png",
+    imageMain: "/screenshots/legal.webp",
+    logo: "/logos/legal-flow.webp",
   },
   {
     id: "task-flow",
@@ -151,8 +151,8 @@ const MODULES = [
     },
     dashboardTitle: "Task Flow · CRM Commercial & Contrats de Mission",
     badge: "Cockpit Global",
-    imageMain: "/screenshots/task.jpeg",
-    logo: "/logos/task-flow.png",
+    imageMain: "/screenshots/task.webp",
+    logo: "/logos/task-flow.webp",
   },
 ];
 

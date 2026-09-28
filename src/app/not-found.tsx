@@ -12,10 +12,10 @@ import {
 } from "lucide-react";
 
 const QUICK_LINKS = [
-  { href: "/", label: "Accueil", icon: Home, color: "#0052FF" },
-  { href: "/sell-flow", label: "Sell Flow (Facturation FNE)", icon: ShoppingCart, color: "#0052FF" },
+  { href: "/", label: "Accueil", icon: Home, color: "#003061" },
+  { href: "/sell-flow", label: "Sell Flow (Facturation FNE)", icon: ShoppingCart, color: "#003061" },
   { href: "/compta-flow", label: "Compta Flow (SYSCOHADA)", icon: Calculator, color: "#1E40AF" },
-  { href: "/rh-flow", label: "RH Flow (Paie & Pointage)", icon: Users, color: "#0891B2" },
+  { href: "/rh-flow", label: "RH Flow (Paie & Pointage)", icon: Users, color: "#263e88" },
   { href: "/legal-flow", label: "Legal Flow (Bouclier fiscal)", icon: Scale, color: "#7C3AED" },
   { href: "/task-flow", label: "Task Flow (CRM & Contrats)", icon: LayoutDashboard, color: "#334155" },
   { href: "/#tarifs", label: "Grille des Tarifs", icon: Tag, color: "#0052FF" },

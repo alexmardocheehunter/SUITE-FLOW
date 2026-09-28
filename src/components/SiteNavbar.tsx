@@ -16,27 +16,27 @@ const MODULES = [
   {
     href: "/sell-flow",
     label: "Sell Flow",
-    logo: "/logos/sell-flow.png",
+    logo: "/logos/sell-flow.webp",
   },
   {
     href: "/compta-flow",
     label: "Compta Flow",
-    logo: "/logos/compta-flow.png",
+    logo: "/logos/compta-flow.webp",
   },
   {
     href: "/rh-flow",
     label: "RH Flow",
-    logo: "/logos/rh-flow.png",
+    logo: "/logos/rh-flow.webp",
   },
   {
     href: "/legal-flow",
     label: "Legal Flow",
-    logo: "/logos/legal-flow.png",
+    logo: "/logos/legal-flow.webp",
   },
   {
     href: "/task-flow",
     label: "Task Flow",
-    logo: "/logos/task-flow.png",
+    logo: "/logos/task-flow.webp",
   },
 ];
 
@@ -86,21 +86,12 @@ export default function SiteNavbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const isDarkPage = pathname === "/" || pathname === "/contact";
-
   return (
     <>
-      {/* 1. CONTENEUR EN HAUT DE PAGE (ABSOLUTE : NE SUIT PAS LE SCROLL) */}
-      <header className="absolute top-4 sm:top-6 inset-x-0 z-50 flex justify-center px-4 sm:px-8 pointer-events-none">
-        {/* Capsule glassmorphism : givrée sur accueil dark, navy profond sur pages claires pour un contraste parfait */}
-        <div
-          className={cn(
-            "relative pointer-events-auto w-full max-w-[1320px] rounded-full px-6 sm:px-8 lg:px-10 py-3 sm:py-3.5 flex items-center justify-between transition-all backdrop-blur-2xl",
-            isDarkPage
-              ? "bg-white/12 border border-white/25 shadow-[0_8px_32px_rgba(0,0,0,0.25)]"
-              : "bg-[#030B2A]/92 border border-slate-700/60 shadow-[0_12px_36px_rgba(3,11,42,0.25)]"
-          )}
-        >
+      {/* 1. CONTENEUR EN HAUT DE PAGE FIXE Z-50 (FOND OPAQUE STABLE SUR TOUTES LES PAGES) */}
+      <header className="fixed top-3 sm:top-5 inset-x-0 z-50 flex justify-center px-4 sm:px-8 pointer-events-none">
+        {/* Capsule 100% opaque, fond plein et stable sans transparence, contraste garanti partout */}
+        <div className="relative pointer-events-auto w-full max-w-[1320px] rounded-full px-6 sm:px-8 lg:px-10 py-3 sm:py-3.5 flex items-center justify-between transition-all bg-[#040E33] border border-slate-700/80 shadow-[0_12px_40px_rgba(0,0,0,0.45)]">
           
           {/* Logo Suite Flow officiel : Fichier fourni "icon landing page.png" avec mention Cabinet DC-KNOWING */}
           <Link
@@ -110,11 +101,12 @@ export default function SiteNavbar() {
           >
             <div className="relative size-10 sm:size-11 shrink-0 transition-transform group-hover:scale-105">
               <Image
-                src="/icon landing page.png"
+                src="/icon-landing-page.webp"
                 alt="Logo Suite Flow"
                 width={44}
                 height={44}
                 priority
+                quality={80}
                 className="size-full object-contain drop-shadow-[0_4px_16px_rgba(0,82,255,0.45)]"
               />
             </div>
@@ -226,6 +218,17 @@ export default function SiteNavbar() {
               Tarifs
             </Link>
 
+            {/* Lien Comparatif */}
+            <Link
+              href="/comparatif"
+              className={cn(
+                "rounded-full px-3.5 py-1.5 transition-colors hover:text-white hover:bg-white/20 whitespace-nowrap",
+                pathname === "/comparatif" ? "text-white bg-white/20 shadow-xs" : "text-white/90"
+              )}
+            >
+              Comparatif
+            </Link>
+
             {/* Lien À propos — Garanti sans retour à la ligne */}
             <Link
               href="/a-propos"
@@ -286,9 +289,9 @@ export default function SiteNavbar() {
             </button>
           </div>
 
-          {/* 5. MENU MOBILE FLOTTANT AUX COINS ARRONDIS SOUS LA CAPSULE */}
+          {/* 5. MENU MOBILE FLOTTANT AUX COINS ARRONDIS SOUS LA CAPSULE (100% OPAQUE) */}
           {mobileOpen && (
-            <div className="md:hidden absolute left-0 right-0 top-full mt-3 rounded-3xl border border-white/25 bg-[#030B2A]/98 px-6 py-6 backdrop-blur-2xl shadow-2xl max-h-[82vh] overflow-y-auto">
+            <div className="md:hidden absolute left-0 right-0 top-full mt-3 rounded-3xl border border-slate-700 bg-[#040E33] px-6 py-6 shadow-2xl max-h-[82vh] overflow-y-auto">
               <nav className="flex flex-col space-y-4 text-[15px] font-bold text-white">
                 <Link
                   href="/"
@@ -336,6 +339,13 @@ export default function SiteNavbar() {
                   className="py-1 border-b border-white/10 text-emerald-300 font-extrabold"
                 >
                   Grille des Tarifs
+                </Link>
+
+                <Link
+                  href="/comparatif"
+                  className="py-1 border-b border-white/10 text-cyan-300 font-bold"
+                >
+                  Comparatif (vs Marché)
                 </Link>
 
                 <Link

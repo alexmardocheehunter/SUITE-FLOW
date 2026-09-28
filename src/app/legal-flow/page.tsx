@@ -13,7 +13,7 @@ export default function LegalFlowPage() {
       title="Conformité fiscale et juridique ivoirienne"
       subtitle="Suivi de la conformité légale et administrative de l'entreprise. Le calendrier fiscal intègre vos obligations selon votre régime (RSI ou Réel Normal) et vous envoie des alertes WhatsApp proactives avant chaque échéance pour éviter les pénalités."
       icon="scale"
-      logoSrc="/logos/legal-flow.png"
+      logoSrc="/logos/legal-flow.webp"
       moduleColor="#7C3AED"
       features={[
         { icon: "calendar", title: "Calendrier fiscal personnalisé", text: "Échéances filtrées selon votre régime fiscal (RSI, Réel Normal) pour ne suivre que vos obligations réelles." },

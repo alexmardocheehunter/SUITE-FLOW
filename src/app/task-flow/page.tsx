@@ -13,7 +13,7 @@ export default function TaskFlowPage() {
       title="CRM & Contrats de mission automatisés"
       subtitle="Bien plus qu'un outil de tâches : votre cockpit CRM et moteur de génération de contrats (lettres de mission, conventions d'honoraires, contrats de prestation). Conçu pour le cabinet DC-KNOWING et les PME de services pour piloter le cycle client du devis à la rentabilité finale."
       icon="board"
-      logoSrc="/logos/task-flow.png"
+      logoSrc="/logos/task-flow.webp"
       moduleColor="#334155"
       features={[
         { icon: "contract", title: "Génération de contrats & lettres de mission", text: "Créez en 1 clic vos contrats de prestation, lettres de mission conformes OHADA et conventions d'honoraires prêtes à signer." },

@@ -89,10 +89,11 @@ export default function EcosystemeSection() {
                 <div className="relative mb-2 w-20">
                   <div aria-hidden className="absolute inset-0 animate-pulse rounded-2xl bg-cyan-400 blur-xl opacity-60" />
                   <Image
-                    src="/icon landing page.png"
+                    src="/icon-landing-page.webp"
                     alt="Noyau Suite Flow"
                     width={160}
                     height={160}
+                    quality={80}
                     className="relative h-auto w-full object-contain drop-shadow-xl"
                   />
                 </div>
