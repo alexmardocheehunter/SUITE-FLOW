@@ -1,0 +1,891 @@
+================================================================================
+          SUITE FLOW — RECUEIL EXHAUSTIF DE TOUS LES CONTENUS TEXTUELS
+                     (Édition Intégrale Landing Page & Pages Web)
+================================================================================
+
+Date d'extraction : Septembre 2026
+Projet : Suite Flow par DC-KNOWING
+Site web : https://suite-flow.ci (Cabinet d'expertise comptable & éditeur de logiciels)
+Localisation : Abidjan, Côte d'Ivoire
+
+Ce document regroupe TOUS les textes sans exception :
+- Titres (H1, H2, H3, H4)
+- Sous-titres, accroches et surtitres (badges / taglines)
+- Descriptions, paragraphes narratifs, explications
+- Call-To-Action (boutons, liens, bannières, micro-copies)
+- Tous les modules logiciels (Sell, Compta, RH, Legal, Task)
+- Grilles tarifaires, formules, packs, bundles, options
+- Questions et réponses FAQ
+- Schéma nodal et partenaires écosystème
+- Témoignages clients intégraux avec noms, rôles, villes et citations
+- Formulaire de contact (champs, placeholders, menus déroulants, confirmation)
+- Équipe, histoire, valeurs, chiffres clés du cabinet
+- Footer, coordonnées, mentions légales et page 404
+
+
+================================================================================
+SOMMAIRE
+================================================================================
+1. MÉTADONNÉES GLOBALES & BALISES HEAD DU SITE
+2. BARRE DE NAVIGATION (NAVBAR GLOBALE)
+3. PAGE D'ACCUEIL (/) — SECTION PAR SECTION :
+   3.1. Hero Section (Haut de page)
+   3.2. Section Story Interactive des 5 Modules (FlowStorySection)
+        - Sell Flow
+        - Compta Flow
+        - RH Flow
+        - Legal Flow
+        - Task Flow
+        - Textes Lightbox et interfaces
+   3.3. Section Tarifs (#tarifs)
+        - Les 3 Formules principales (Solo, Business, Premium VIP)
+        - Bundles & Offres Spéciales
+        - FAQ Tarifs accordéon
+   3.4. Section Écosystème Nodal (#ecosysteme)
+        - Schéma nodal interactif
+        - Les 3 Pôles Bento (Consultance, Noyau Suite Flow, Business & Wallet)
+        - CTA Écosystème
+   3.5. Section Témoignages Clients (TestimonialStackSection)
+        - Les 5 avis clients complets
+4. PAGES DÉTAILLÉES DES LOGICIELS :
+   4.1. Page Sell Flow (/sell-flow)
+   4.2. Page Compta Flow (/compta-flow)
+   4.3. Page RH Flow (/rh-flow)
+   4.4. Page Legal Flow (/legal-flow)
+   4.5. Page Task Flow (/task-flow)
+   4.6. Template partagé (Textes récurrents, sections pratiques, stats)
+5. PAGE À PROPOS (/a-propos)
+   - Slogan et mission
+   - Notre histoire
+   - Notre mission
+   - L'équipe (membres et fonctions)
+   - Nos valeurs
+   - Chiffres clés & CTA
+6. PAGE CONTACT & PRISE DE RDV (/contact)
+   - Coordonnées physiques, téléphoniques et horaires
+   - Formulaire d'audit (champs, options, messages de validation)
+   - Prise de RDV Calendly
+7. PAGE ERREUR 404 (/not-found)
+8. PIED DE PAGE GLOBAL (FOOTER)
+
+
+================================================================================
+1. MÉTADONNÉES GLOBALES & BALISES HEAD DU SITE
+================================================================================
+• Balise Title (Accueil) :
+  "Suite Flow — Toute l'expertise d'un cabinet dans une seule suite"
+
+• Balise Meta Description :
+  "Conçue pour les réalités des PME ivoiriennes. Une seule saisie. Nos 5 logiciels interconnectés s'occupent du reste."
+
+• Metadata application (metadata.json) :
+  - Nom : "Suite Flow — DC-KNOWING"
+  - Description : "Suite logicielle complète pour PME ivoiriennes par DC-KNOWING : Sell Flow, Compta Flow, RH Flow, Legal Flow, Task Flow."
+
+
+================================================================================
+2. BARRE DE NAVIGATION (NAVBAR GLOBALE)
+================================================================================
+• Positionnement : Capsule flottante arrondie (Pill Shape), effet glassmorphism transparent (flou d'arrière-plan + bordure douce), fixée tout en haut de page.
+
+• Marque & Logo :
+  - Logo officiel 3D hexagonal (icon landing page.png)
+  - Nom : "Suite Flow"
+  - Lien : Renvoie vers l'accueil (/)
+
+• Menu de Navigation Desktop :
+  1. "Accueil" -> Renvoie vers /
+  2. "Modules" -> Bouton avec chevron déclenchant le dropdown blanc Calendly :
+     Liste des 5 modules (icône 3D + libellé direct, sans en-tête ni sous-titre ni pied) :
+     - Sell Flow (lien vers /sell-flow)
+     - Compta Flow (lien vers /compta-flow)
+     - RH Flow (lien vers /rh-flow)
+     - Legal Flow (lien vers /legal-flow)
+     - Task Flow (lien vers /task-flow)
+  3. "Écosystème" -> Ancre /#ecosysteme
+  4. "Tarifs" -> Ancre /#tarifs
+  5. "À propos" -> Lien vers /a-propos
+
+• Boutons d'action à droite (Navbar) :
+  - Bouton rond WhatsApp officiel :
+    * Bulle d'aide (title) : "Discuter sur WhatsApp (+225 07 67 13 19 93)"
+    * Aria-label : "Contacter le cabinet sur WhatsApp"
+    * Lien : https://wa.me/2250767131993
+  - Bouton CTA principal :
+    * Libellé : "Audit Gratuit"
+    * Flèche : "→"
+    * Lien : /contact
+
+• Menu Mobile Déroulant (Menu Burger) :
+  - Bouton d'ouverture / fermeture (icône Burger ou Croix X)
+  - Liens :
+    * "Accueil"
+    * Titre section : "NOS 5 LOGICIELS"
+    * "Sell Flow"
+    * "Compta Flow"
+    * "RH Flow"
+    * "Legal Flow"
+    * "Task Flow"
+    * "Écosystème (Banques & Réseau)"
+    * "Grille des Tarifs"
+    * "À propos de DC-KNOWING"
+    * Bouton CTA : "Réserver un Audit Gratuit (30 min)"
+    * Bouton WhatsApp : "Assistance WhatsApp directe"
+
+• Bouton Flottant WhatsApp persistant sur Mobile :
+  - Icône WhatsApp + texte "WhatsApp"
+  - Lien : https://wa.me/2250767131993
+
+
+================================================================================
+3. PAGE D'ACCUEIL (/) — SECTION PAR SECTION
+================================================================================
+
+--------------------------------------------------------------------------------
+3.1. HERO SECTION (HAUT DE PAGE)
+--------------------------------------------------------------------------------
+• Surtitre (au-dessus du mot FLOW) :
+  "LA SUITE"
+
+• Titre visuel géant 3D :
+  "FL [HEXAGONE 3D ROTATIF INTERACTIF] W"
+
+• Badges satellites flottants cliquables dans le Hero (Desktop & Mobile) :
+  1. Sell Flow (alt: "Sell Flow", lien: /sell-flow)
+  2. Legal Flow (alt: "Legal Flow", lien: /legal-flow)
+  3. Compta Flow (alt: "Compta Flow", lien: /compta-flow)
+  4. Task Flow (alt: "Task Flow", lien: /task-flow)
+  5. RH Flow (alt: "RH Flow", lien: /rh-flow)
+
+• Titre Principal (H1) :
+  "La suite logicielle tout-en-un pour gérer votre PME ivoirienne"
+
+• Paragraphe d'accroche :
+  "Facturation certifiée FNE-DGI, compta SYSCOHADA révisé, paie CNPS et pilotage commercial. Saisissez vos opérations une seule fois, nos 5 logiciels interconnectés s'occupent du reste."
+
+• Boutons CTA du Hero :
+  - CTA Principal : "DÉCOUVREZ NOS LOGICIELS" (lien vers #modules)
+  - CTA Secondaire : "Voir une démo (Gratuit)" (lien vers /contact)
+
+• Signaux de confiance et conformité :
+  - Pastille animée : "+250 PME et cabinets accompagnés à Abidjan"
+  - Label conformité : "100% Conforme DGI · FNE · CNPS · SYSCOHADA"
+
+• Bouton de défilement vers le bas :
+  - Capsule blanche avec flèche vers le bas
+  - Aria-label : "Faire défiler vers les modules" (lien vers #modules)
+
+
+--------------------------------------------------------------------------------
+3.2. SECTION STORY INTERACTIVE DES 5 MODULES (FlowStorySection)
+--------------------------------------------------------------------------------
+Cette section interactive présente successivement les 5 logiciels lors du scroll ou du clic sur les onglets.
+
+• Barre de navigation des onglets :
+  - Tab 1 : "Sell" (Module 01 / 05)
+  - Tab 2 : "Compta" (Module 02 / 05)
+  - Tab 3 : "RH" (Module 03 / 05)
+  - Tab 4 : "Legal" (Module 04 / 05)
+  - Tab 5 : "Task" (Module 05 / 05)
+
+--- MODULE 01 : SELL FLOW ---
+• Numéro & Nom : "Module 01 / 05" — "Sell Flow"
+• Titre (H3) : "Vendez vite. Facturez juste. Dormez tranquille."
+• Sous-titre : "Émettez vos factures certifiées FNE en 1 clic depuis votre caisse ou sur le terrain. Le QR code DGI se génère instantanément sans aucune double saisie."
+• Narration de flux d'interconnexion :
+  "Encaissement instantané → Transmet les écritures de vente à Compta Flow"
+• Puces à cocher :
+  - "Facturation Normalisée Électronique (FNE) 100% conforme DGI"
+  - "Envoi automatique des reçus et factures par WhatsApp & e-mail au client"
+  - "Gestion des stocks multi-magasins et encaissements Mobile Money (Wave, Orange, MTN)"
+• Bouton CTA : "En savoir plus sur Sell Flow →" (lien: /sell-flow)
+• Interface / Capture d'écran :
+  - Titre fenêtre macOS : "Sell Flow · Gestion Commerciale & Caisse FNE"
+  - Badge fenêtre : "Période 2026"
+  - Texte survol zoom : "Cliquer pour agrandir le dashboard"
+• Badge flottant parallax :
+  - Icône : ✅
+  - Titre : "Facturation Normalisée DGI"
+  - Sous-titre : "QR Code certifié actif & Sticker DGI"
+
+--- MODULE 02 : COMPTA FLOW ---
+• Numéro & Nom : "Module 02 / 05" — "Compta Flow"
+• Titre (H3) : "Prenez vos factures en photo. Votre compta est faite."
+• Sous-titre : "Finie la ressaisie interminable. Les ventes de Sell Flow et les salaires de RH Flow alimentent vos écritures, tandis que l'OCR extrait les pièces comptables au fil de l'eau."
+• Narration de flux d'interconnexion :
+  "Reçoit les ventes & la paie → Construit automatiquement le bilan SYSCOHADA"
+• Puces à cocher :
+  - "Plan comptable SYSCOHADA révisé pré-configuré pour la Côte d'Ivoire"
+  - "Rapprochement bancaire intelligent en quelques clics (relevés multi-banques)"
+  - "Export certifié des écritures révisées vers votre expert-comptable (Sage 100)"
+• Bouton CTA : "En savoir plus sur Compta Flow →" (lien: /compta-flow)
+• Interface / Capture d'écran :
+  - Titre fenêtre macOS : "Flow Compta · Pilotage Performance & SYSCOHADA"
+  - Badge fenêtre : "Solde Consolidé"
+  - Texte survol zoom : "Cliquer pour agrandir le dashboard"
+• Badge flottant parallax :
+  - Icône : ⚡
+  - Titre : "SYSCOHADA Révisé 2026"
+  - Sous-titre : "Écritures équilibrées · Clôture automatique"
+
+--- MODULE 03 : RH FLOW ---
+• Numéro & Nom : "Module 03 / 05" — "RH Flow"
+• Titre (H3) : "La paie ivoirienne, sans aspirine."
+• Sous-titre : "Calculez automatiquement l'ITS, la CNPS et la CMU selon les derniers barèmes légaux ivoiriens. Bulletins certifiés édités en 1 clic sans risque de redressement."
+• Narration de flux d'interconnexion :
+  "Valide les bulletins de salaire → Déverse les charges de personnel en Compta Flow"
+• Puces à cocher :
+  - "Calcul automatique et opposable : ITS, CNPS, CMU et taxes patronales"
+  - "Bordereaux de cotisation CNPS et état DISA téléchargeables en 1 clic"
+  - "Pointage mobile officiel par QR Code avec géolocalisation anti-fraude"
+• Bouton CTA : "En savoir plus sur RH Flow →" (lien: /rh-flow)
+• Interface / Capture d'écran :
+  - Titre fenêtre macOS : "RH Flow · Traitement de la Paie Mensuelle"
+  - Badge fenêtre : "Barème 2026"
+  - Texte survol zoom : "Cliquer pour agrandir le dashboard"
+• Badge flottant parallax :
+  - Icône : 🛡️
+  - Titre : "Barèmes DGI & CNPS 2026"
+  - Sous-titre : "0 Anomalie détectée · Bulletins officiels"
+
+--- MODULE 04 : LEGAL FLOW ---
+• Numéro & Nom : "Module 04 / 05" — "Legal Flow"
+• Titre (H3) : "Zéro oubli. Zéro pénalité."
+• Sous-titre : "Votre bouclier juridique et fiscal personnalisé. Recevez des alertes WhatsApp ciblées avant chaque date limite de déclaration e-Impôts et de versement CNPS."
+• Narration de flux d'interconnexion :
+  "Surveille les flux financiers → Bloque les majorations et pénalités de retard"
+• Puces à cocher :
+  - "Calendrier fiscal intelligent configuré selon votre régime (RSI, Réel Normal)"
+  - "Alertes WhatsApp proactives à J-30, J-15, J-3 pour anticiper vos règlements"
+  - "Registre d'entreprise centralisé : statuts, baux, PV d'AG et veille réglementaire OHADA"
+• Bouton CTA : "En savoir plus sur Legal Flow →" (lien: /legal-flow)
+• Interface / Capture d'écran :
+  - Titre fenêtre macOS : "Legal Flow · Portail de Conformité Fiscale & Sociale"
+  - Badge fenêtre : "DGI / CNPS / CMU"
+  - Texte survol zoom : "Cliquer pour agrandir le dashboard"
+• Badge flottant parallax :
+  - Icône : ⚖️
+  - Titre : "Bouclier Fiscal DGI & CNPS"
+  - Sous-titre : "Alertes WhatsApp proactives · 0 pénalité"
+
+--- MODULE 05 : TASK FLOW ---
+• Numéro & Nom : "Module 05 / 05" — "Task Flow"
+• Titre (H3) : "Le cerveau de votre entreprise."
+• Sous-titre : "Le cockpit collaboratif qui synchronise les 4 autres applications. Visualisez qui fait quoi et quand, surveillez les missions et pilotez la rentabilité réelle de votre PME."
+• Narration de flux d'interconnexion :
+  "Orchestre l'ensemble → Relie les commandes, la compta et le personnel en 1 vue"
+• Puces à cocher :
+  - "Cockpit collaboratif synchronisé en temps réel avec vos commandes clients"
+  - "Attribution de rôles clairs, délais stricts et alertes de dépassement budgétaire"
+  - "Tableau de bord de rentabilité par mission et portail de suivi client transparent"
+• Bouton CTA : "En savoir plus sur Task Flow →" (lien: /task-flow)
+• Interface / Capture d'écran :
+  - Titre fenêtre macOS : "Task Flow · Vue d'ensemble & Métriques Cabinet"
+  - Badge fenêtre : "Cockpit Global"
+  - Texte survol zoom : "Cliquer pour agrandir le dashboard"
+• Badge flottant parallax :
+  - Icône : 📌
+  - Titre : "Cockpit des Opérations en Cours"
+  - Sous-titre : "100% de traçabilité · Marges par mission"
+
+• Pied de la section Story :
+  - Indicateur d'avancement : "0X / 05 — [Nom du module]"
+  - Bouton de transition : "Module suivant : [Nom du module suivant] →"
+  - En fin de parcours : "Tous les modules explorés ✓"
+
+• Fenêtre modale Lightbox (plein écran au clic sur dashboard) :
+  - Titre : [Nom du dashboard]
+  - Sous-titre : "Capture d'écran haute fidélité · Cliquez n'importe où ou appuyez sur Échap pour fermer"
+  - Bouton de fermeture : "Fermer le zoom"
+
+
+--------------------------------------------------------------------------------
+3.3. SECTION TARIFS (#tarifs)
+--------------------------------------------------------------------------------
+• Surtitre : "TARIFS TRANSPARENTS"
+• Titre Principal (H2) : "Un investissement rentable dès le 1er mois"
+• Sous-titre d'explication :
+  "Bien moins cher que vos pénalités de retard fiscales, erreurs de facturation ou journées perdues en ressaisie comptable."
+
+• FORMULE 1 : PACK SOLO
+  - Nom : "SOLO"
+  - Badge note : "POUR DÉMARRER"
+  - Description : "Idéal pour les consultants, prestataires de service et auto-entrepreneurs."
+  - Prix : "30 000 FCFA / mois"
+  - Fonctionnalités incluses :
+    * "3 logiciels au choix (ex : Sell + Compta + Task)"
+    * "Facturation FNE normalisée illimitée"
+    * "1 Utilisateur Administrateur"
+    * "Support standard par email & WhatsApp"
+  - Bouton CTA : "Choisir le Pack Solo" (lien: /contact)
+
+• FORMULE 2 : PACK BUSINESS (Le choix recommandé)
+  - Badge supérieur : "✨ Le Choix des PME Ivoiriennes"
+  - Nom : "BUSINESS"
+  - Badge note : "L'ARSENAL COMPLET"
+  - Description : "La configuration recommandée pour piloter sereinement une PME en pleine croissance."
+  - Prix : "75 000 FCFA / mois"
+  - Fonctionnalités incluses :
+    * "Les 5 logiciels inclus sans restriction"
+    * "Jusqu'à 10 collaborateurs connectés"
+    * "Passerelle directe avec votre Expert-Comptable (ONECCA)"
+    * "Alertes fiscales par WhatsApp personnalisées"
+    * "Support WhatsApp prioritaire 6j/7"
+  - Bouton CTA : "Démarrer avec le Pack Business" (lien: /contact)
+
+• FORMULE 3 : PACK PREMIUM VIP
+  - Nom : "PREMIUM VIP"
+  - Badge note : "ACCOMPAGNEMENT D'ÉLITE"
+  - Description : "Pour les entreprises multi-établissements et celles désirant un suivi sur mesure."
+  - Prix : "135 000 FCFA / mois"
+  - Fonctionnalités incluses :
+    * "Tout débloqué en illimité"
+    * "Multi-établissements & Multi-sociétés"
+    * "Accompagnement VIP dédié par le cabinet DC-KNOWING"
+    * "Formation sur site pour toutes vos équipes"
+  - Bouton CTA : "Contacter la Direction VIP" (lien: /contact)
+
+• OFFRES & BUNDLES SPÉCIAUX :
+  - Titre de section : "Offres & Bundles Spéciaux"
+  
+  - Carte 1 : Bundle Recrutement
+    * Surtitre : "BUNDLE RECRUTEMENT"
+    * Titre : "ATS Flow + RH Flow"
+    * Description : "Du CV au bulletin de salaire : recrutez, contractualisez, suivez les pointages et payez dans un flux 100% automatisé."
+    * Tarif : "25 000 FCFA HT / mois, dès"
+    * Bouton : "Demander ce bundle →" (lien: /contact)
+    
+  - Carte 2 : Direction Financière Externalisée
+    * Surtitre : "DIRECTION FINANCIÈRE EXTERNALISÉE"
+    * Titre : "Pack DFE & Audit Cabinet"
+    * Description : "Un Directeur Financier senior dédié du cabinet DC-KNOWING + l'ensemble de la Suite Flow pour piloter votre entreprise au sommet."
+    * Tarif : "Sur mesure (selon volume d'activité)"
+    * Bouton : "Parler à un expert DC-KNOWING →" (lien: /contact)
+
+• FAQ TARIFS (Questions & Réponses de l'accordéon) :
+  - Titre : "Questions Fréquentes sur les Tarifs"
+  
+  - Question 1 : "Puis-je changer de formule à tout moment ?"
+    Réponse 1 : "Oui, à tout moment. La migration est immédiate et l'ensemble de vos données suit sans aucune ressaisie."
+    
+  - Question 2 : "Y a-t-il un engagement de durée ?"
+    Réponse 2 : "Non. Nos formules sont mensuelles et sans engagement, résiliables en un clic pour la fin du mois en cours."
+    
+  - Question 3 : "Le déploiement et le paramétrage sont-ils inclus ?"
+    Réponse 3 : "Oui : paramétrage initial, import de vos données et formation de démarrage sont assurés par les experts du cabinet DC-KNOWING à Abidjan."
+    
+  - Question 4 : "Puis-je ne choisir qu'un ou deux logiciels ?"
+    Réponse 4 : "Oui avec la formule Solo (3 logiciels au choix). Cependant, l'interconnexion complète des 5 logiciels (Business) supprime définitivement la double saisie."
+    
+  - Question 5 : "Et si j'ai besoin d'un expert-comptable agréé ?"
+    Réponse 5 : "Le cabinet DC-KNOWING (agréé ONECCA) peut prendre en charge l'intégralité de votre comptabilité, audit et bilans légaux en synergie avec la Suite Flow."
+
+
+--------------------------------------------------------------------------------
+3.4. SECTION ÉCOSYSTÈME NODAL (#ecosysteme)
+--------------------------------------------------------------------------------
+• Surtitre : "L'ÉCOSYSTÈME NODAL UNIQUE"
+• Titre Principal (H2) :
+  "Plus qu'un logiciel. Un moteur économique local."
+• Description :
+  "Pensé par des experts-comptables ivoiriens pour les réalités des PME d'Abidjan et de l'intérieur. La Suite Flow vous connecte directement à votre expert ONECCA, aux centres de gestion agréés et sécurise vos règlements."
+
+• Schéma Nodal Animé :
+  - Nœud central : "SUITE FLOW" (F)
+  - Nœud satellite gauche : "Consultance & CGA"
+  - Nœud satellite droite : "Business & Wallet"
+  - Flux d'impulsions électriques animées
+
+• 3 Cartes Bento :
+  1. Carte "Consultance Flow" :
+     - Titre : "Consultance Flow"
+     - Description : "Donnez un accès sécurisé et certifié à votre cabinet comptable & commissaire aux comptes agréé ONECCA. Fini les allers-retours de classeurs papier."
+     - Pied de carte : "Connexion ONECCA & CGA →"
+
+  2. Carte Centrale "Noyau Central" :
+     - Surtitre : "NOYAU CENTRAL"
+     - Titre : "LA SUITE FLOW"
+     - Description : "Le pont d'intelligence entre toutes vos filiales, vos données financières SYSCOHADA et vos partenaires d'affaires."
+     - Badge d'activité : "● 5 Modules · 1 Seule Base de Données"
+
+  3. Carte "Business Flow & Wallet" :
+     - Titre : "Business Flow & Wallet"
+     - Description : "Place de marché B2B intégrée entre entreprises abonnées en Côte d'Ivoire. Règlements directs compatibles Wave, Orange Money, MTN et virements interbancaires BCEAO."
+     - Pied de carte : "Réseau B2B & Mobile Money →"
+
+• Bouton CTA Final Écosystème :
+  - "REJOINDRE L'ÉCOSYSTÈME SUITE FLOW →" (lien: /contact)
+
+
+--------------------------------------------------------------------------------
+3.5. SECTION TÉMOIGNAGES CLIENTS (TestimonialStackSection)
+--------------------------------------------------------------------------------
+• Surtitre : "TÉMOIGNAGES"
+• Titre Principal (H2) : "Ce que disent nos utilisateurs sur Suite Flow"
+• Sous-titre : "Des entrepreneurs et indépendants ivoiriens qui gèrent leur croissance sans stress."
+
+• Les 5 Témoignages :
+  1. Client Sell Flow :
+     - Nom : Amadou K.
+     - Rôle & Ville : Gérant de Quincaillerie (Abidjan)
+     - Initiales / Avatar : AK
+     - Note : ★★★★★ (5/5)
+     - Témoignage : « Avant, j'avais une boule au ventre à chaque visite des impôts. Avec Sell Flow, mes factures sortent avec le QR code FNE direct. Je dors enfin sur mes deux oreilles. »
+
+  2. Client Compta Flow :
+     - Nom : Sarah M.
+     - Rôle & Ville : Directrice Financière (Plateau)
+     - Initiales / Avatar : SM
+     - Note : ★★★★★ (5/5)
+     - Témoignage : « Le rapprochement bancaire nous prenait 3 jours chaque fin de mois. Aujourd'hui, on plie ça en 45 minutes. Mon équipe ne fait plus de saisie, on fait du vrai conseil financier. »
+
+  3. Client Task Flow :
+     - Nom : Koffi A.
+     - Rôle & Ville : Entrepreneur (Cocody)
+     - Initiales / Avatar : KA
+     - Note : ★★★★★ (5/5)
+     - Témoignage : « Le support client basé à Abidjan comprend nos urgences. Un vrai gain de temps au quotidien pour piloter toute mon entreprise. »
+
+  4. Client RH Flow :
+     - Nom : Mariam Y.
+     - Rôle & Ville : Responsable RH (Logistique Vridi)
+     - Initiales / Avatar : MY
+     - Note : ★★★★★ (5/5)
+     - Témoignage : « Faire les fiches de paie et déclarations CNPS avec Excel me prenait une semaine entière. Maintenant, avec RH Flow, le 25 du mois à midi, tout est imprimé et déclaré. C'est magique. »
+
+  5. Client Global Suite Flow :
+     - Nom : Brice K.
+     - Rôle & Entreprise : Directeur Général (Cabinet BTP)
+     - Initiales / Avatar : BK
+     - Note : ★★★★★ (5/5)
+     - Témoignage : « La centralisation des 5 modules nous a permis de diviser nos coûts administratifs par deux tout en restant 100% conformes DGI et CNPS. »
+
+• Indication de navigation Mobile :
+  "← Faites glisser pour lire tous les avis →"
+
+
+================================================================================
+4. PAGES DÉTAILLÉES DES LOGICIELS
+================================================================================
+
+--------------------------------------------------------------------------------
+4.1. PAGE SELL FLOW (/sell-flow)
+--------------------------------------------------------------------------------
+• Métadonnées SEO :
+  - Title : "Sell Flow — Facturation certifiée FNE-DGI | Suite Flow"
+  - Description : "Vendez vite. Facturez juste. Le premier logiciel de facturation ivoirien 100% certifié FNE-DGI."
+
+• Hero :
+  - Badge / Tagline : "Sell Flow — Facturation certifiée"
+  - Titre (H1) : "Vendez vite. Facturez juste. Dormez tranquille."
+  - Sous-titre : "Depuis la caisse ou sur le terrain, émettez des factures certifiées FNE en 1 clic. Le QR code DGI se génère tout seul. Fini la terreur des contrôles fiscaux et les redressements inattendus."
+  - Boutons Hero : "Demander une démo" (/contact) | "Voir les tarifs" (/#tarifs)
+
+• 6 Fonctionnalités Clés :
+  1. "Facturation FNE certifiée DGI" : QR code et sticker fiscal générés automatiquement sur chaque facture. Zéro double saisie sur le portail DGI.
+  2. "Multi-caisses & multi-magasins" : Pilotez vos points de vente d'Abidjan à San Pedro depuis une seule caisse tactile, en boutique comme sur le terrain.
+  3. "Mobile Money & espèces en temps réel" : Chaque encaissement Wave, Orange Money ou espèces est suivi et rapproché instantanément.
+  4. "Devis & bons de commande pro" : Des documents commerciaux propres, numérotés et suivis jusqu'à la facture finale.
+  5. "Stocks avec alertes de rupture" : Soyez prévenu avant la rupture et ne ratez plus jamais une vente.
+  6. "Stats par vendeur & produit" : Qui vend quoi, où et quand : pilotez vos équipes avec des chiffres nets.
+
+• Section En Pratique :
+  - Titre : "En caisse comme sur le terrain"
+  - Description : "Le vendeur encaisse, Sell Flow normalise : la facture part certifiée à la DGI pendant que le stock et la compta se mettent à jour seuls."
+  - Puces d'impact :
+    * Intégration directe de l'API de Facturation Normalisée Électronique (FNE)
+    * Envoi automatique des reçus par WhatsApp & e-mail au client
+    * Gestion des stocks en temps réel multi-magasins
+  - Statistiques :
+    * 30 s par facture normalisée
+    * 3 j pour la clé API FNE
+    * 0 F d'amende DGI
+
+• Témoignages dédiés :
+  1. Awa Koné (Boutique cosmétiques, Plateau - AK) : « Avant, je passais mes soirées à ressaisir mes factures sur le portail DGI. Maintenant tout part certifié depuis la caisse. »
+  2. Yao Kouassi (Réseau auto, Abidjan - YK) : « Nos trois garages facturent pareil, à Abidjan comme à Bouaké. Le contrôleur DGI a validé sans remarque. »
+  3. Fatou Diarra (Supérette, Cocody - FD) : « Le suivi Mobile Money en temps réel a fait disparaître nos écarts de caisse du week-end. »
+
+• CTA de fin de page :
+  - Titre : "Prêt à sécuriser vos ventes ?"
+  - Bouton : "Démarrer avec Sell Flow"
+
+
+--------------------------------------------------------------------------------
+4.2. PAGE COMPTA FLOW (/compta-flow)
+--------------------------------------------------------------------------------
+• Métadonnées SEO :
+  - Title : "Compta Flow — Comptabilité SYSCOHADA automatisée | Suite Flow"
+  - Description : "Prenez vos factures en photo. Votre compta est faite : OCR, SYSCOHADA temps réel, export Sage 100."
+
+• Hero :
+  - Badge / Tagline : "Compta Flow — SYSCOHADA temps réel"
+  - Titre (H1) : "Prenez vos factures en photo. Votre compta est faite."
+  - Sous-titre : "Arrêtez la ressaisie interminable. Sell Flow et RH Flow envoient directement les données ici. Vos bilans SYSCOHADA s'équilibrent par magie, sans erreurs d'écritures."
+  - Boutons Hero : "Demander une démo" (/contact) | "Voir les tarifs" (/#tarifs)
+
+• 6 Fonctionnalités Clés :
+  1. "Plan SYSCOHADA révisé pré-configuré" : Imputations proposées automatiquement selon le référentiel OHADA, sans erreur de compte.
+  2. "OCR intelligent des factures" : Photographiez vos pièces : montants, TVA et tiers sont lus et ventilés seuls.
+  3. "Rapprochement bancaire auto" : De 3 jours à 45 minutes : vos relevés se rapprochent ligne à ligne, sans ressaisie.
+  4. "Balance, Grand Livre & états auto" : Vos états financiers se construisent en continu, prêts pour la liasse fiscale.
+  5. "Import relevés multi-banques" : BICICI, SGBCI, NSIA, Ecobank : importez vos relevés et laissez le moteur travailler.
+  6. "Export vers expert-comptable" : Écritures révisées exportables vers Sage 100 pour une collaboration sans friction.
+
+• Section En Pratique :
+  - Titre : "Scannez, contrôlez, clôturez"
+  - Description : "La pile de factures du mois devient une comptabilité révisée : l'IA impute, vous validez, la clôture avance toute l'année."
+  - Puces d'impact :
+    * Plan comptable SYSCOHADA révisé pré-configuré pour la Côte d'Ivoire
+    * Rapprochement bancaire intelligent en quelques clics
+    * Export certifié vers les logiciels de votre expert-comptable
+  - Statistiques :
+    * -90 % de temps de saisie
+    * 45 min de rapprochement
+    * 60 PME accompagnées
+
+• Témoignages dédiés :
+  1. Koffi Mensah (Gérant négoce, Treichville - KM) : « La clôture de mai ne nous fait plus peur : tout est imputé au fil de l'eau, la liasse sort presque seule. »
+  2. Aïcha Bah (Comptable interne, PME BTP - AB) : « L'OCR lit même nos factures froissées du marché. Mes écritures sont propres pour la première fois. »
+  3. Serge N'Guessan (DAF, services - SN) : « J'exporte vers mon expert-comptable en un clic. Nos échanges sont passés de semaines à quelques heures. »
+
+• CTA de fin de page :
+  - Titre : "Prêt à digitaliser votre compta ?"
+  - Bouton : "Démarrer avec Compta Flow"
+
+
+--------------------------------------------------------------------------------
+4.3. PAGE RH FLOW (/rh-flow)
+--------------------------------------------------------------------------------
+• Métadonnées SEO :
+  - Title : "RH Flow — Paie ivoirienne automatisée | Suite Flow"
+  - Description : "La paie ivoirienne, sans aspirine : ITS, CNPS, CMU calculés, bulletins certifiés en quelques clics."
+
+• Hero :
+  - Badge / Tagline : "RH Flow — Paie conforme CI"
+  - Titre (H1) : "La paie ivoirienne, sans aspirine."
+  - Sous-titre : "Calculez l'ITS, gérez la CNPS et la CMU en respectant scrupuleusement les derniers barèmes légaux. Vos déclarations sociales sont prêtes à être envoyées en fin de mois."
+  - Boutons Hero : "Demander une démo" (/contact) | "Voir les tarifs" (/#tarifs)
+
+• 6 Fonctionnalités Clés :
+  1. "Bulletins conformes Code du Travail" : Des bulletins propres et opposables, de 50 à 4 000 salariés par entreprise.
+  2. "ITS auto (barème DGI 2026)" : Retenues à la source calculées sur les barèmes fiscaux ivoiriens mis à jour.
+  3. "CNPS & CMU gérées" : Cotisations sociales et couverture maladie intégrées, sans oubli de déclaration.
+  4. "Pointage QR / GPS mobile" : Présences vérifiées par scan QR et géolocalisation, injectées dans la paie.
+  5. "Congés & absences digitalisés" : Demandes, validations N+1 et compteurs : fini les cahiers de congés.
+  6. "Bordereaux téléchargeables" : Livre de paie annuel, état 301/DISA et bordereaux de cotisation en un clic.
+
+• Section En Pratique :
+  - Titre : "De l'embauche au bulletin, sans Excel"
+  - Description : "Le salarié pointe sur mobile, ses heures alimentent la paie, le bulletin sort certifié : un seul flux, zéro erreur de formule."
+  - Puces d'impact :
+    * Calcul automatique : CNPS, CMU, ITS et retenues légales
+    * Bordereaux de cotisation CNPS téléchargeables en 1 clic
+    * Fiches de paie digitalisées et pointage officiel par QR Code
+  - Statistiques :
+    * 4 000 salariés gérés
+    * 0 erreur de calcul
+    * 301 état DISA auto
+
+• Témoignages dédiés :
+  1. Mariam Touré (DRH, BTP Abidjan - MT) : « 180 bulletins bouclés en une matinée, CNPS et ITS justes. Ma DISA est sortie sans une nuit blanche. »
+  2. Ibrahim Sylla (Conducteur travaux, Bouaké - IS) : « Le pointage QR a stoppé les retards fantômes sur nos chantiers. Les heures réelles entrent seules en paie. »
+  3. Nadia Ahoua (Gérante négoce, Yopougon - NA) : « Nos journaliers sont payés au taux horaire exact, sans contestation. La paix sociale est revenue. »
+
+• CTA de fin de page :
+  - Titre : "Prêt à payer juste, à l'heure ?"
+  - Bouton : "Démarrer avec RH Flow"
+
+
+--------------------------------------------------------------------------------
+4.4. PAGE LEGAL FLOW (/legal-flow)
+--------------------------------------------------------------------------------
+• Métadonnées SEO :
+  - Title : "Legal Flow — Conformité fiscale sans pénalité | Suite Flow"
+  - Description : "Zéro oubli. Zéro pénalité : calendrier fiscal intelligent, alertes WhatsApp, IA entraînée sur le CGI 2026."
+
+• Hero :
+  - Badge / Tagline : "Legal Flow — Bouclier anti-pénalités"
+  - Titre (H1) : "Zéro oubli. Zéro pénalité."
+  - Sous-titre : "On s'occupe de retenir les dates critiques pour vous. Recevez un message avant chaque échéance fiscale et juridique pour agir au bon moment."
+  - Boutons Hero : "Demander une démo" (/contact) | "Voir les tarifs" (/#tarifs)
+
+• 6 Fonctionnalités Clés :
+  1. "Calendrier fiscal intelligent" : Échéances filtrées selon votre régime (RSI, Réel Normal) : vous ne voyez que vos impôts.
+  2. "Alertes WhatsApp auto" : Relances J-30, J-15, J-3 puis la veille : impossible d'oublier une déclaration.
+  3. "Registre juridique centralisé" : Statuts, PV d'AG et contrats classés et retrouvables en un clic.
+  4. "Acomptes IS & TVA suivis" : Vos acomptes provisionnels et crédits de TVA pilotés sans surprise.
+  5. "Veille réglementaire OHADA" : Annexe fiscale et évolutions traduites en actions concrètes pour votre PME.
+  6. "Télédéclarations préparées" : Vos déclarations e-Impôts préparées à temps, avec les bons montants.
+
+• Section En Pratique :
+  - Titre : "Anticipez chaque échéance"
+  - Description : "Le 10, le 15, le 20 : Legal Flow connaît votre calendrier mieux que vous et vous prévient avant qu'il ne soit trop tard."
+  - Puces d'impact :
+    * Alertes personnalisées : TVA, CNPS, acompte d'impôt sur les bénéfices
+    * Registre juridique d'entreprise centralisé (statuts, PV d'AG, baux)
+    * Veille réglementaire OHADA et loi de finances ivoirienne
+  - Statistiques :
+    * J-30 première relance auto
+    * 30 s réponse juridique
+    * 0 pénalité visée
+
+• Témoignages dédiés :
+  1. Aminata Cissé (Gérante services, Marcory - AC) : « L'alerte WhatsApp m'a sauvée deux fois sur la TVA. Plus un franc de majoration depuis un an. »
+  2. Jean-Marc Ebrotie (Dirigeant garage, San Pedro - JE) : « Je pose mes questions en langage simple, Donalde répond avec l'article du CGI. Bluffant. »
+  3. Prisca N'Da (Assistante direction, PME - PN) : « Nos PV d'AG et statuts enfin rangés et à jour. Le jour du contrôle, tout était prêt. »
+
+• CTA de fin de page :
+  - Titre : "Prêt à dormir sans pénalité ?"
+  - Bouton : "Démarrer avec Legal Flow"
+
+
+--------------------------------------------------------------------------------
+4.5. PAGE TASK FLOW (/task-flow)
+--------------------------------------------------------------------------------
+• Métadonnées SEO :
+  - Title : "Task Flow — Pilotage & CRM de votre entreprise | Suite Flow"
+  - Description : "Le cerveau de votre entreprise : Kanban collaboratif, rentabilité par mission, portail client transparent."
+
+• Hero :
+  - Badge / Tagline : "Task Flow — Le chef d'orchestre"
+  - Titre (H1) : "Le cerveau de votre entreprise."
+  - Sous-titre : "Suivez qui fait quoi, et quand. Le cockpit parfait pour le dirigeant de PME qui veut tout piloter en un coup d'œil, sans micro-management épuisant."
+  - Boutons Hero : "Demander une démo" (/contact) | "Voir les tarifs" (/#tarifs)
+
+• 6 Fonctionnalités Clés :
+  1. "Kanban multi-projets" : Toutes vos missions visualisées d'un coup d'œil, du devis à la livraison.
+  2. "Attribution automatique" : Les tâches nées dans Sell, Compta, RH ou Legal sont assignées sans ressaisie.
+  3. "Alertes retard & dépassement" : Prévenu avant le dérapage, jamais après : délais et budgets sous surveillance.
+  4. "Rentabilité par mission" : Chaque dossier affiche sa marge : vous savez enfin ce qui rapporte.
+  5. "Portail client transparent" : Vos clients suivent l'avancement de leur dossier : confiance et zéro relance.
+  6. "Métriques temps réel" : Charge des équipes, délais moyens, dossiers à risque : le pouls du cabinet.
+
+• Section En Pratique :
+  - Titre : "De la vente à la livraison, sans trou"
+  - Description : "Une facture Sell Flow crée sa tâche de suivi, une échéance Legal Flow crée son rappel : Task Flow relie les 4 apps en un seul flux de travail."
+  - Puces d'impact :
+    * Cockpit collaboratif synchronisé avec vos commandes clients
+    * Attribution de rôles clairs, délais stricts et alertes de retard
+    * Tableau de bord de rentabilité par mission et par pôle d'activité
+  - Statistiques :
+    * 100 % de traçabilité
+    * 5 apps connectées
+    * 75 % d'avancement visible
+
+• Témoignages dédiés :
+  1. Stéphane Adjei (Associé cabinet, Plateau - SA) : « Chaque dossier client a son Kanban. En réunion, on ouvre Task Flow et tout le monde sait où on en est. »
+  2. Grâce Ouattara (Consultante, Cocody - GO) : « Le portail client a divisé par deux les appels 'où en est mon dossier ?'. Mes clients adorent. »
+  3. Didier Boka (Gérant agence, Abidjan - DB) : « On a découvert quelles missions perdaient de l'argent. On a réajusté nos prix en un mois. »
+
+• CTA de fin de page :
+  - Titre : "Prêt à tout piloter d'un seul regard ?"
+  - Bouton : "Démarrer avec Task Flow"
+
+
+--------------------------------------------------------------------------------
+4.6. TEMPLATE COMMUN DES 5 PAGES PRODUITS (Composants récurrents)
+--------------------------------------------------------------------------------
+• En-tête section fonctionnalités :
+  - Surtitre : "CE QUE ÇA CHANGE"
+  - Titre (H2) : "Pensé pour le terrain ivoirien"
+
+• Section Pratique :
+  - Surtitre : "EN PRATIQUE"
+  - Badge interconnexion : "Connecté en temps réel aux 4 autres apps de la Suite Flow"
+
+• Section Témoignages :
+  - Surtitre : "ILS L'UTILISENT DÉJÀ"
+  - Titre (H2) : "Ils ont adopté [Nom du logiciel]"
+
+• Sélecteur transversal des autres modules :
+  - Surtitre : "ÉCOSYSTÈME UNIFIÉ"
+  - Titre (H3) : "Voir aussi les 4 autres modules de Suite Flow"
+  - Lien externe : "Voir la démo globale sur l'accueil →" (/#modules)
+  - Descriptions des modules dans les cartes transversales :
+    * Sell Flow : "Facturation FNE-DGI & caisse"
+    * Compta Flow : "SYSCOHADA & rapprochement bancaire"
+    * RH Flow : "Paie ivoirienne ITS/CNPS & pointage"
+    * Legal Flow : "Bouclier fiscal & alertes WhatsApp"
+    * Task Flow : "Cockpit projets & rentabilité"
+
+• Bannière CTA Finale (Template) :
+  - Titre (H2) : [ctaTitle propre au module]
+  - Sous-titre : "Déploiement accompagné à Abidjan par le cabinet DC-KNOWING. Sans engagement, sans stress."
+  - Bouton 1 : [ctaButton propre au module] (lien vers /contact)
+  - Bouton 2 : "Consulter les tarifs" (lien vers /#tarifs)
+
+
+================================================================================
+5. PAGE À PROPOS (/a-propos)
+================================================================================
+• Métadonnées SEO :
+  - Title : "À propos — DC-KNOWING, The bespoke partner | Suite Flow"
+  - Description : "Cabinet d'expertise comptable ivoirien devenu éditeur logiciel : 15+ experts, +80 PME, 100% conçu en Côte d'Ivoire."
+
+• Hero :
+  - Badge / Surtitre : "DC-KNOWING"
+  - Titre (H1) : "Nous sommes DC-KNOWING. The bespoke partner."
+  - Sous-titre : "Cabinet d'expertise comptable ivoirien, transformé en éditeur logiciel pour doter les PME d'outils dignes des grandes entreprises."
+
+• Histoire & Mission :
+  - Bloc 1 : "Notre histoire"
+    Texte : "Né de la pratique quotidienne auprès de dizaines de PME abidjanaises, le cabinet a industrialisé ses propres méthodes : chaque tâche répétitive est devenue un module logiciel, chaque contrôle un automatisme. La Suite Flow est née sur le terrain, pas dans un bureau."
+
+  - Bloc 2 : "Notre mission"
+    Citation maîtresse : « Doter les PME ivoiriennes d'outils dignes des grandes entreprises. »
+    Texte explicatif : "Rigueur juridique, excellence comptable et innovation digitale : le même niveau d'exigence, du commerçant au groupe multi-sites."
+
+• Section Équipe :
+  - Surtitre : "L'ÉQUIPE"
+  - Titre (H2) : "Plus de 15 experts à vos côtés"
+  - Membres présentés :
+    1. Keyman-Bi I. Constant (KC) — Directeur Général
+    2. M. Yapi (MY) — Contrôle de gestion
+    3. Alex Mardochée Koffi (KA) — Transformation digitale & IA
+    4. Williams (WD) — Développement
+    5. Donalde (DD) — Relation client & IA
+    6. Pôle comptable (+9) — 7 stagiaires + managers
+
+• Section Valeurs :
+  1. "Proximité terrain" (icône MapPin) :
+     "Basés à Riviera Bonoumin, présents sur vos sites d'Abidjan à San Pedro."
+  2. "Conformité stricte" (icône FileCheck2) :
+     "Agréé MBPE & FDFP. Chaque fonctionnalité respecte la réglementation ivoirienne."
+  3. "Souveraineté numérique" (icône ShieldCheck) :
+     "Vos données d'entreprise hébergées et traitées dans un cadre maîtrisé, 100% conçu en Côte d'Ivoire."
+
+• Chiffres Clés du Cabinet :
+  - "+80 PME accompagnées"
+  - "15+ experts sur site"
+  - "5 logiciels métier"
+  - "100 % conçu en Côte d'Ivoire"
+
+• CTA de fin de page :
+  - Bouton : "TRAVAILLER AVEC NOUS" (lien vers /contact)
+
+
+================================================================================
+6. PAGE CONTACT & PRISE DE RENDEZ-VOUS (/contact)
+================================================================================
+• Métadonnées SEO :
+  - Title : "Contact — Parlons de votre entreprise | Suite Flow"
+  - Description : "Réservez votre Audit Flash Gratuit : Abidjan, 27 22 42 14 43 / 07 67 13 19 93."
+
+• Hero Contact :
+  - Surtitre : "CONTACT"
+  - Titre (H1) : "Parlons de votre entreprise."
+  - Sous-titre : "Laissez-nous vos coordonnées : un expert vous rappelle sous 24 h ouvrées."
+
+• Coordonnées Officielles du Cabinet (Encadré latéral) :
+  - Adresse : "Riviera Bonoumin, Cocody — Abidjan, Côte d'Ivoire"
+  - Téléphone : "27 22 42 14 43 / 07 67 13 19 93"
+  - Email : "dcknowing@gmail.com"
+  - Horaires : "Lun – Ven · 8h – 18h"
+  - Carte intégrée Google Maps : "Riviera Bonoumin Cocody Abidjan"
+
+• Formulaire de Contact & Réservation d'Audit (ContactForm) :
+  - Champ 1 : Label "NOM & PRÉNOM" | Placeholder : "Awa Koné" (Requis)
+  - Champ 2 : Label "ENTREPRISE" | Placeholder : "ETS Koné" (Requis)
+  - Champ 3 : Label "TÉLÉPHONE" | Placeholder : "07 00 00 00 00" (Requis, type tel)
+  - Champ 4 : Label "EMAIL" | Placeholder : "vous@entreprise.ci" (Requis, type email)
+  - Champ 5 : Label "NOMBRE DE SALARIÉS" | Menu déroulant :
+    * "Choisir…" (valeur par défaut désactivée)
+    * "1 – 10"
+    * "11 – 50"
+    * "51 – 200"
+    * "200+"
+  - Champ 6 : Label "SECTEUR D'ACTIVITÉ" | Menu déroulant :
+    * "Choisir…" (valeur par défaut désactivée)
+    * "Commerce & Distribution"
+    * "BTP & Immobilier"
+    * "Services"
+    * "Agro & Négoce"
+    * "Autre"
+  - Champ 7 : Label "MESSAGE" | Placeholder : "Décrivez votre besoin en une phrase…" (Zone texte 4 lignes, requise)
+  - Bouton d'envoi : "RÉSERVER MON AUDIT FLASH GRATUIT"
+  
+  - Message de Confirmation Post-Envoi (État de succès) :
+    * Icône : CheckCircle2 vert émeraude
+    * Titre : "Demande bien reçue !"
+    * Texte : "Un expert DC-KNOWING vous rappelle sous 24 h ouvrées pour planifier votre Audit Flash Gratuit."
+
+• Section Prendre Rendez-vous en Ligne Directement :
+  - Icône : CalendarCheck
+  - Titre (H2) : "Prendre RDV directement"
+  - Texte : "Choisissez votre créneau d'Audit Flash Gratuit (30 min, visio ou au cabinet)."
+  - Bouton Calendly : "OUVRIR LE CALENDRIER" (Lien : https://calendly.com/dcknowing)
+
+
+================================================================================
+7. PAGE ERREUR 404 (/not-found)
+================================================================================
+• Surtitre : "ERREUR 404"
+• Titre Principal (H1) : "Page introuvable"
+• Paragraphe d'explication :
+  "L'adresse demandée n'existe pas ou a été déplacée. Choisissez l'une des rubriques ci-dessous pour continuer votre visite."
+
+• Raccourcis de navigation directe :
+  - "Accueil" (/)
+  - "Sell Flow (Facturation FNE)" (/sell-flow)
+  - "Compta Flow (SYSCOHADA)" (/compta-flow)
+  - "RH Flow (Paie & Pointage)" (/rh-flow)
+  - "Legal Flow (Bouclier fiscal)" (/legal-flow)
+  - "Task Flow (Cockpit missions)" (/task-flow)
+  - "Grille des Tarifs" (/#tarifs)
+  - "Écosystème & Banques" (/#ecosysteme)
+  - "Réserver un Audit (Contact)" (/contact)
+
+• Bouton Retour :
+  "← Revenir à l'accueil" (lien vers /)
+
+
+================================================================================
+8. PIED DE PAGE GLOBAL (FOOTER)
+================================================================================
+• Colonne 1 : Identité & Cabinet DC-KNOWING
+  - Logo "F" & Marque "Suite Flow"
+  - Slogan : "Toute l'expertise d'un cabinet réunie dans une seule suite logicielle interconnectée pour les PME ivoiriennes."
+  - Titre sous-section : "CABINET DC-KNOWING"
+  - Liens cabinet :
+    * "À propos du cabinet" (/a-propos)
+    * "Notre équipe d'experts" (/a-propos)
+    * "Réserver un audit offert (30 min)" (/contact)
+    * "Partenaires bancaires & DGI" (/#ecosysteme)
+
+• Colonne 2 : Logiciels
+  - Titre : "LOGICIELS"
+  - Liens :
+    * "Sell Flow" (/sell-flow)
+    * "Compta Flow" (/compta-flow)
+    * "RH Flow" (/rh-flow)
+    * "Legal Flow" (/legal-flow)
+    * "Task Flow" (/task-flow)
+
+• Colonne 3 : Site & Conformité
+  - Titre : "SITE & CONFORMITÉ"
+  - Liens :
+    * "Écosystème" (/#ecosysteme)
+    * "Tarifs" (/#tarifs)
+    * "À propos" (/a-propos)
+    * "Contact" (/contact)
+    * "Réseau ONECCA Côte d'Ivoire" (/#ecosysteme)
+    * "Centres de Gestion Agréés (CGA)" (/#ecosysteme)
+    * "Politique de Confidentialité" (#confidentialite)
+    * "Sécurité des Données Cloud" (#securite)
+
+• Colonne 4 : Contact Abidjan
+  - Titre : "CONTACT ABIDJAN"
+  - "Cocody Riviera Bonoumin"
+  - "Abidjan, Côte d'Ivoire"
+  - "+225 27 22 42 14 43"
+  - "+225 07 67 13 19 93"
+  - "Lun – Ven · 8h00 – 18h00"
+
+• Bandeau Inférieur de Copyright :
+  - "© 2026 DC-KNOWING · Cabinet d'expertise comptable — Abidjan, Côte d'Ivoire."
+  - "Conforme SYSCOHADA Révisé & FNE-DGI"
+
+================================================================================
+FIN DU RECUEIL EXHAUSTIF DU CONTENU SUITE FLOW
+================================================================================

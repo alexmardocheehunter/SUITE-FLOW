@@ -1,0 +1,8 @@
+{
+  "name": "landingpageflow",
+  "description": "Suite Flow — La suite logicielle pour gérer votre PME en Côte d'Ivoire. Facturation normalisée FNE, comptabilité SYSCOHADA et paie aux normes locales par le cabinet DC-KNOWING à Abidjan.",
+  "requestFramePermissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

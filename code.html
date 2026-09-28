@@ -1,0 +1,947 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="fr" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Suite Flow | L'Écosystème SaaS Tout-en-un des PME Ivoiriennes</title>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS CDN with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            body: ['"Inter"', 'sans-serif'],
+          },
+          colors: {
+            flowBlue: '#0052FF',
+            flowNavy: '#0A1128',
+            flowIndigo: '#4338CA',
+            flowCyan: '#06B6D4',
+            flowDark: '#080E1E'
+          },
+          boxShadow: {
+            'glow-blue': '0 0 50px -10px rgba(0, 82, 255, 0.35)',
+            'glow-cyan': '0 0 50px -10px rgba(6, 182, 212, 0.35)',
+            'glow-purple': '0 0 50px -10px rgba(124, 58, 237, 0.35)',
+            'glow-emerald': '0 0 50px -10px rgba(16, 185, 129, 0.35)',
+            'glass': '0 20px 40px -15px rgba(0, 0, 0, 0.07), 0 0 0 1px rgba(255, 255, 255, 0.8) inset',
+            '3d-lift': '0 30px 60px -15px rgba(15, 23, 42, 0.16), 0 4px 12px -2px rgba(15, 23, 42, 0.08)',
+            '3d-floating': '0 25px 50px -12px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(255, 255, 255, 0.9)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles: 3D Spatial Perspectives & Glassmorphism -->
+<style data-purpose="custom-effects">
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+    .glass-panel-dark {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .hero-glow-mesh {
+      background-image: radial-gradient(at 20% 20%, rgba(37, 99, 235, 0.12) 0px, transparent 55%),
+                        radial-gradient(at 80% 80%, rgba(79, 70, 229, 0.12) 0px, transparent 55%),
+                        radial-gradient(at 50% 50%, rgba(6, 182, 212, 0.08) 0px, transparent 65%);
+    }
+    .perspective-container {
+      perspective: 1400px;
+    }
+    .transform-3d-left {
+      transform: rotateY(-6deg) rotateX(3deg) translateZ(0);
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .transform-3d-left:hover {
+      transform: rotateY(-2deg) rotateX(1deg) translateZ(10px);
+    }
+    .transform-3d-right {
+      transform: rotateY(6deg) rotateX(3deg) translateZ(0);
+      transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .transform-3d-right:hover {
+      transform: rotateY(2deg) rotateX(1deg) translateZ(10px);
+    }
+    @keyframes floatGentle {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-8px) rotate(0.8deg); }
+    }
+    .animate-float {
+      animation: floatGentle 5s ease-in-out infinite;
+    }
+    .animate-float-delayed {
+      animation: floatGentle 5.5s ease-in-out infinite 1.5s;
+    }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-blue-600 selection:text-white">
+<!-- BEGIN: NavigationBar -->
+<header class="sticky top-0 z-50 w-full transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 pb-2">
+<nav class="glass-panel rounded-2xl px-5 py-3 shadow-lg flex items-center justify-between border border-white/60">
+<!-- Brand Logo & Label -->
+<a class="flex items-center space-x-3 group" href="#">
+<div class="w-10 h-10 rounded-xl overflow-hidden shadow-md group-hover:scale-105 transition-transform duration-300 bg-white p-1 flex items-center justify-center">
+<img alt="Logo Suite Flow" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3bTizFkgGfCZ8dE_FR8lQw-CuDTsjK7MUfH8SE8nonuYRHqNcabI9FVFYJUj0oLoLj_txTz9hq0Z6D4Wu8bEkIW1gUdBC4m4HW_aOnU69PRUR-y2Bpff9rKi8nkjjemjg6PWtc7uK_9Dwo15AKwJmfvqQHcgfyP781smckak0EjSfSZCEJkAaQ-Y56HHdIqKcb-13WhBBI9IUTP-hzfQ2on4SQHgth7xuB00wo293luejqC5pg7nkC-OnW6hCbDh0ycE">
+</div>
+<div class="flex flex-col">
+<span class="text-xl font-extrabold tracking-tight text-slate-900 leading-none">SUITE FLOW</span>
+<span class="text-[10px] font-semibold text-blue-600 tracking-wider uppercase mt-0.5">Par DC-KNOWING</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+<a class="hover:text-blue-600 transition-colors" href="#suite">La Suite</a>
+<a class="hover:text-blue-600 transition-colors" href="#logiciels">Nos Logiciels</a>
+<a class="hover:text-blue-600 transition-colors" href="#ecosysteme">Écosystème</a>
+<a class="hover:text-blue-600 transition-colors" href="#temoignages">Témoignages &amp; ROI</a>
+<a class="hover:text-blue-600 transition-colors" href="#tarifs">Tarifs</a>
+</div>
+<!-- Badges & Action Buttons -->
+<div class="flex items-center space-x-3">
+<div class="hidden lg:flex items-center space-x-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200/60 shadow-sm">
+<span class="text-base">🇨🇮</span>
+<span class="">Certifié FNE</span>
+</div>
+<a class="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl text-xs font-bold text-slate-700 hover:bg-slate-100 transition-all border border-slate-200" href="#tarifs">
+            Espace Client
+          </a>
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-0.5 transition-all" href="#audit-cta">
+            Démo Gratuite
+          </a>
+</div>
+</nav>
+</div>
+</header>
+<!-- END: NavigationBar -->
+<!-- BEGIN: HeroExtension -->
+<section class="pt-8 pb-14 px-4 sm:px-6 lg:px-8 text-center max-w-6xl mx-auto" data-purpose="hero-transition" id="suite">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200/80 mb-6 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-blue-600 animate-ping"></span>
+  Écosystème 100% Connecté · DGI · CNPS · BCEAO
+</div>
+<h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-6">
+  Saisissez une seule fois.<br class="hidden sm:block">
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700">Nos 5 logiciels font le reste.</span>
+</h1>
+<p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed mb-10">
+  Conçue pour les réalités opérationnelles des PME ivoiriennes. Vente, paie, comptabilité SYSCOHADA, alertes fiscales et pilotage d'équipe en flux continu.
+</p>
+<!-- 3D Brand Emblem Visual Feature -->
+<div class="relative max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-white/60 bg-gradient-to-b from-slate-900 to-blue-950 p-2 sm:p-3 group">
+<div class="absolute -top-16 -left-16 w-64 h-64 bg-blue-500/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -right-16 w-64 h-64 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative rounded-2xl overflow-hidden border border-white/10 shadow-inner">
+<img alt="La Suite Flow - Écosystème Unifié" class="w-full h-auto object-cover transform group-hover:scale-[1.01] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUOPfCZYW0b8pd5eQsElcPYZeAZXGHi35AH3_xE6xjh-oNjGXEV-QBH9HnN6V5tZXTGPj5KZWuTZiIJuv11DWoztbonWXjuxWvhMVjku--j-qv2RQpRDlwfhS7m9bpQcG7oxdCQHXbxdKRgD9qUh2Mbi7C1x6MLfC5cOvttOim-PsmVFGNLrI3Yz7Eb9eCKVt5c_N6GACowzS-L2sHe7bl4GXmBz2_H-C74bPfeLzLOfL-DQRlEIM2uECotRp85uXoagM">
+</div>
+</div>
+</section>
+<!-- END: HeroExtension -->
+<!-- BEGIN: 5 Logiciels Section (Pure White Background, Apple-Style Sticky Dock, Spatial 3D Glows) -->
+<section class="bg-white relative overflow-hidden text-slate-900 pt-6 pb-24" data-purpose="five-softwares-showcase" id="logiciels">
+<!-- STICKY APPLE-STYLE DOCK -->
+<div class="sticky top-6 z-50 mx-auto max-w-fit px-3 sm:px-4 py-2 bg-white/85 backdrop-blur-xl border border-slate-200/80 shadow-lg shadow-slate-900/5 rounded-full flex items-center gap-1.5 sm:gap-2 mb-8"><!-- Sell Flow Pill -->
+<a class="group flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition-all duration-200" href="#sell-flow">
+<img alt="Sell Flow Icon" class="w-7 h-7 rounded-lg object-contain group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbDWXIfRnqfvAyB-Ik4D1Le3iUzP27K-Co0B147AImToadF7eJLbJIbTpS2u7FV3_oUHTxWg90aQNAnRzh4xHi8mAwcH7LYsd4fo2zsBAuU5YmPTlJAzbef3p7YgNAtcjNXolWsdi4i6BL7Yc2SAAQ0rta914ikPP7E1bPBw8YZLw4rrUotKqMxCSzr7zc2faFbJS6_3oA1WnK83UmsYffS3bOVqiX4azCk7n1CdAZhhP96PT2U1EbidPLjvMBLgll4RA">
+<span class="hidden sm:inline">Sell</span>
+</a>
+<!-- Compta Flow Pill -->
+<a class="group flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-blue-700 hover:bg-blue-50 transition-all duration-200" href="#compta-flow">
+<img alt="Compta Flow Icon" class="w-7 h-7 rounded-lg object-contain group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAIJ1CZO9Gf9PUh0Q6Xab7UASlxe9BGMlmLH3H8oLhViGJB7Z8k0I8lbwVl-l-66pjA-0VQ0SRn1-ZsSAKW9AnxRnYpXAmEx3FWsJ_wDGpWNSWt4HBT4BzARGwfiaQb4o0epEK3hQ-YaZJgQeu4b0hPl7TOYoxLRaGH1B-EQwA0Ta_E4I2xpI6sVlKxh7KNpVSJbfjr0TKmCSMFrKiD9k_TQ2KZl871xDNiXPcfdd649xrbMn1Q3opdDTye2-r15iCIH8">
+<span class="hidden sm:inline">Compta</span>
+</a>
+<!-- RH Flow Pill (Indigo) -->
+<a class="group flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-indigo-900 hover:bg-indigo-50 transition-all duration-200" href="#rh-flow">
+<img alt="RH Flow Icon" class="w-7 h-7 rounded-lg object-contain group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsPBD6CK1HunE_RYGqUVGScl_JKQ4NFs7uMmM77cz0WTMWjR9xhwHuxMVVORBUtgzP2-SQvIQQOu-7omE7N3IKDklFUc_8wPOoRJot1_nyc6jV8idIivZ1uYlMT0fiXTl1PmM7mD2Qjo4Q1zqGYbO7_8FqcJ2GemX5Ux9huqMXa1L7RafUyZMnFTI-rI66IcPL7IP056fPCXwhQbz2Pc0jO863sQ23qByPthu_mGaW3W21a8TUqlNYjbhRfUQmufDU6pQ">
+<span class="hidden sm:inline">RH</span>
+</a>
+<!-- Legal Flow Pill -->
+<a class="group flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-purple-700 hover:bg-purple-50 transition-all duration-200" href="#legal-flow">
+<img alt="Legal Flow Icon" class="w-7 h-7 rounded-lg object-contain group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAIZut-Bp7IWdLq8VMoB5pyxfe_pR2dsGbANNsUlYdZTyfuivFk6C_1tl8MqQLF75UutVAN7O_hHISGAtbO-b3BwSFl1Q8HzC1stDzWuN9a-_cw7u9nri935f85Np5IGOdetC0aeqGivlsAEGvd137Qc-ez2kvdXXGNQvOvPQVWl5R8squcro4l6U8KCgLv67ek2iQvVp8vPbwoNPufFgr57WJ4Nht2OCBPWXtWIvYQ5BSUuE7jmBaU9Dto2VrB08mBbY">
+<span class="hidden sm:inline">Legal</span>
+</a>
+<!-- Task Flow Pill -->
+<a class="group flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold text-slate-600 hover:text-neutral-900 hover:bg-neutral-100 transition-all duration-200" href="#task-flow">
+<img alt="Task Flow Icon" class="w-7 h-7 rounded-lg object-contain group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRtD1jEXJUlnlVM11V8hr_PXGO1mWVhrgjmE9jjOFnKIZutw0sLWqN6iBscbB6BSujaP1YMTLb-fWW8HOJCbqT_Cu7aZNX8IHQh1Hiy-4-4Rd3icFx6MlSmEkJ_tTpE2FHTZxWLNy3Ly7xwlKPHxUqsIlIyQsdK1I8_p9qpZ86ei5dTVHfzztIK-fi-v9MXhr8K2fS-flgHQbXKYIqhrOlRgSTlhMpH8Zw8eWks9vysxc3JeMXq-djoAGXHAiQ3l22GrE">
+<span class="hidden sm:inline">Task</span>
+</a></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- BLOC 1: SELL FLOW (Texte Gauche, 3D Droite) -->
+<div class="min-h-[85vh] py-20 flex items-center border-b border-slate-100" data-purpose="software-sell-flow" id="sell-flow">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Content Left -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center space-x-3">
+<div class="w-24 h-24 rounded-3xl bg-white p-2 shadow-2xl shadow-slate-500/20 border border-slate-200/80 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"><img alt="Logo 3D Sell Flow" class="w-full h-full object-contain filter drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_6CnT4_kl7LvUPBqmu7pKGude2HOSLgv0-jk8UNU7Y4-H2n1KCOfVq5srSKyF-wGcZ4VS2rrhblrdT79e-LeqnhraPIW7BWAKvRtiF_Vt1wyXmyYJuJgAdiXnvhiNKBqFPomW9X8fKZKFrFucZv26HkLVb-W4P_Us8IfiwIA9JZPmFkaqS5-VehIo03C1DKMUbzG5CsE1jD1_iKf32e_IS_CJ53NkFrRQkRYmvtuPavF9HeFaVRZhJJ5dm7cwFvUbyLg"></div>
+<div class="inline-flex px-3 py-1 rounded-full bg-slate-100 text-slate-600 font-semibold text-xs tracking-wider uppercase">
+              01 / SELL FLOW
+            </div>
+</div>
+<h3 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]">
+            Vendez vite. Facturez juste. Dormez tranquille.
+          </h3>
+<p class="text-slate-600 text-lg leading-relaxed">
+            Depuis la caisse ou sur le terrain, émettez des factures certifiées FNE en 1 clic. Le QR code DGI se génère tout seul. Fini la terreur des contrôles fiscaux et les redressements inattendus.
+          </p>
+<ul class="space-y-3.5 pt-2 text-sm font-semibold text-slate-700">
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-slate-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Intégration directe de l'API de Facturation Normalisée Électronique (FNE)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-slate-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Envoi automatique des reçus par WhatsApp &amp; e-mail au client</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-slate-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Gestion des stocks en temps réel multi-magasins</span>
+</li>
+</ul>
+</div>
+<!-- Visuals Right: Perspective Mockups + Subtitle Aura -->
+<div class="lg:col-span-7 perspective-container relative">
+<!-- Aura Lumineuse Bleu Ardoise / Acier (10-15%) -->
+<div class="absolute -inset-10 rounded-full blur-[140px] pointer-events-none bg-slate-500/15"></div>
+<div class="relative transform-3d-left">
+<!-- Conteneur Dashboard Principal -->
+<div class="rounded-2xl border border-slate-200/80 shadow-2xl shadow-slate-500/20 bg-white p-2.5 overflow-hidden">
+<div class="flex items-center justify-between px-3 py-1.5 bg-slate-50 rounded-lg mb-2 border border-slate-100 text-[11px] text-slate-500 font-semibold">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-rose-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+<span class="ml-2 font-bold text-slate-700">Sell Flow · Gestion Commerciale &amp; Caisse FNE</span>
+</div>
+<span class="text-[10px] font-bold text-slate-600 bg-slate-200/60 px-2 py-0.5 rounded">Période 2026</span>
+</div>
+<img alt="Dashboard Sell Flow" class="w-full rounded-xl border border-slate-200/70 shadow-inner object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH6NO6Y0dd1e3IE4TCYqknbBozV2Mv3KGDZ-gzJpPPB7S5hOyWRjgn1ru2teCAGTNylgfuwZLuo2Ec6Sx3oRo46UtTp-Kx4AKPgZvE84KYF2k6OKvzax4HAVFf4Eh4bgqTNUJvN8VaAKkYNq9N8TyEcccWZx6Sil5IEA96tnBH3f8jtNpsA1gjc191mWHV72a84U2xswZUrtY1fEqTzyE5y4eWkvR8_B7LQnMPIO22puFUimeSniiGA0HroOX03983Tts">
+</div>
+<!-- Facture Proforma Normalisée Superposée -->
+<div class="absolute -bottom-8 -right-4 sm:-right-8 w-3/5 sm:w-1/2 glass-panel p-2.5 rounded-2xl shadow-3d-floating border border-white animate-float z-20">
+<div class="flex items-center justify-between pb-1.5 mb-1.5 border-b border-slate-100">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-[10px] font-extrabold text-slate-800 uppercase">Facture Proforma FNE</span>
+</div>
+<span class="text-[9px] font-bold text-slate-400">DGI Côte d'Ivoire</span>
+</div>
+<img alt="Facture Proforma FNE Sell Flow" class="w-full rounded-lg shadow-sm border border-slate-200/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhx0kgg4N4MkRFZqXCfueniyV5P1QI8aJ-4_1uaF4Uiir6mgZ8l90Au5HryWAVPrj4PbdleZIlBttSJ19WJWGrDGowVkmahPXa4OHMvAMh48T6zu53beNYml8qJdqd6sijEqsymY7ICFlyDjFuoKPP2jTE3kuNDFs-8yLVP4KczCF9F8y6Q94vj10A0aPsaPzm29pyvX1cyfNmzHptUfC80asRQ31Y4KAqwjgXF191epJOnCXYP7FyUU7BTOCNLJ2P74o">
+</div>
+<!-- Badges Glassmorphism Flottants -->
+<div class="absolute -top-4 right-6 glass-panel px-3.5 py-1.5 rounded-full shadow-lg border border-white flex items-center gap-2 text-xs font-bold text-slate-800 animate-float-delayed z-20">
+<span class="">✅</span>
+<span class="">Facturation Normalisée DGI</span>
+</div>
+<div class="absolute bottom-12 -left-4 glass-panel px-3.5 py-1.5 rounded-full shadow-lg border border-white flex items-center gap-2 text-xs font-bold text-slate-700 z-20">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="">QR DGI Actif</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- BLOC 2: COMPTA FLOW (3D Gauche, Texte Droite) -->
+<div class="min-h-[85vh] py-20 flex items-center border-b border-slate-100" data-purpose="software-compta-flow" id="compta-flow">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Visuals Left -->
+<div class="lg:col-span-7 order-2 lg:order-1 perspective-container relative">
+<!-- Aura Lumineuse Bleu Royal / Marine (10-15%) -->
+<div class="absolute -inset-10 rounded-full blur-[140px] pointer-events-none bg-blue-700/15"></div>
+<div class="relative transform-3d-right">
+<!-- Main Compta Flow Dashboard Window -->
+<div class="rounded-2xl border border-slate-200/80 shadow-2xl shadow-blue-700/20 bg-white p-2.5 overflow-hidden">
+<div class="flex items-center justify-between px-3 py-1.5 bg-slate-50 rounded-lg mb-2 border border-slate-100 text-[11px] text-slate-500 font-semibold">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-rose-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 inline-block"></span>
+<span class="ml-2 font-bold text-blue-900">Flow Compta · Pilotage Performance &amp; SYSCOHADA</span>
+</div>
+<span class="text-[10px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded">Solde Consolidé</span>
+</div>
+<img alt="Dashboard Flow Compta" class="w-full rounded-xl border border-slate-200/70 shadow-inner object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIqlgZyJRDUA8kuubFhi8q7JGMbFTQVMW-sjKbwYNRqN4wmhiIenSO3AQkzL0N9y19cMIT1FGWJPOkGIOdtl-Eg34mdELNmfmbW0V2yywGakcfjosQpW9XjcnlJDJpmQCPXZcCIJJB7DyQkum44G3hW6sel-PPL33aenMq6oElpY6kS80B5VCREOaJZJNDEtqPgfsT294HNwIxhECjMHWZ1g_LGBpnC2X_JhMgdOL5AY7Eyc1vkUo-T_qJBQ12GU1yNzo">
+</div>
+<!-- Floating Glassmorphism Metric Card: Trésorerie & SYSCOHADA -->
+<div class="absolute -bottom-8 -left-4 sm:-left-6 w-80 glass-panel p-4 rounded-2xl shadow-3d-floating border border-white animate-float z-20 space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-[10px] font-extrabold uppercase tracking-wider text-blue-700">Trésorerie Globale</span>
+<span class="text-[10px] px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-extrabold">SYSCOHADA</span>
+</div>
+<div class="text-xl font-black text-slate-900 tracking-tight">5 389 189 789 <span class="text-xs font-semibold text-slate-500">FCFA</span></div>
+<div class="flex items-center justify-between pt-1 border-t border-slate-100 text-[11px] text-slate-600">
+<span class="">Écritures équilibrées</span>
+<span class="font-bold text-blue-700">✓ 100% Conforme</span>
+</div>
+</div>
+<!-- Floating Top Badge -->
+<div class="absolute -top-4 right-8 glass-panel px-3.5 py-1.5 rounded-full shadow-lg border border-white flex items-center gap-2 text-xs font-bold text-blue-800 animate-float-delayed z-20">
+<span class="">⚡</span>
+<span class="">Clôture Fiscale &amp; Bilan Automatique</span>
+</div>
+</div>
+</div>
+<!-- Content Right -->
+<div class="lg:col-span-5 order-1 lg:order-2 space-y-6">
+<div class="flex items-center space-x-3">
+<div class="w-24 h-24 rounded-3xl bg-white p-2 shadow-2xl shadow-blue-700/20 border border-blue-100 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"><img alt="Logo 3D Compta Flow" class="w-full h-full object-contain filter drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_I7aud2GMIQOWu2QbtzjQZbzdRgEbzLKu8E9mCbcx1oHtEMdeBOArjhVMZmts9tLeakNy3LY-_sgucEaaOljrl_FUfD7P7ZDvc5LXgf8O5dTxxPD1HRb0M3tftViQgXciyyDhWsifLpo0xDMC2e8lqZ3Y0qWxWULOVqDyGlHD-1odEugvUbkhIsjxQ118G8vNC6P3qyHaRMop6aAtdhMpocGapzu4sejupCVug4lDqXbIdm-ksZ1-lBbdg2kEqEnm2Gs"></div>
+<div class="inline-flex px-3 py-1 rounded-full bg-blue-50 text-blue-700 font-semibold text-xs tracking-wider uppercase">
+              02 / COMPTA FLOW
+            </div>
+</div>
+<h3 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]">
+            Prenez vos factures en photo. Votre compta est faite.
+          </h3>
+<p class="text-slate-600 text-lg leading-relaxed">
+            Arrêtez la ressaisie interminable. Sell Flow et RH Flow envoient directement les données ici. Vos bilans SYSCOHADA s'équilibrent par magie sans erreurs d'écritures.
+          </p>
+<ul class="space-y-3.5 pt-2 text-sm font-semibold text-slate-700">
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-blue-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Plan comptable SYSCOHADA révisé pré-configuré pour la Côte d'Ivoire</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-blue-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Rapprochement bancaire intelligent en quelques clics</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-blue-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Export certifié vers les logiciels de votre expert-comptable</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- BLOC 3: RH FLOW (Texte Gauche, 3D Droite - STRICTEMENT INDIGO FONCÉ, SANS VERT) -->
+<div class="min-h-[85vh] py-20 flex items-center border-b border-slate-100" data-purpose="software-rh-flow" id="rh-flow">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Content Left -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center space-x-3">
+<div class="w-24 h-24 rounded-3xl bg-white p-2 shadow-2xl shadow-indigo-950/20 border border-indigo-200/80 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"><img alt="Logo 3D RH Flow" class="w-full h-full object-contain filter drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ9OrfJgyaePKsPouiAWgL3R2zG-se_cxsoOVpC8ERApDh5oSD58JEpC4xL2-QslA_bzTHbRRiX_yIW6P_lYggt63VZcDF18vPFRCxeBHGfl6taqxSmk9j5yPyHAK6XTmOV_EAV88qPjJJ6tkCjvnP76TC3jZDB71RKe78gkyUkt6Nqr02lbXE0iKC7ymYKe0Z_2obWd9qM_CZ_-mZI1VciSU4inxI-j8HUh06B8iP0TXAaBHDswdegV7esD8B3SF1vEg"></div>
+<div class="inline-flex px-3 py-1 rounded-full bg-indigo-50 text-indigo-900 font-semibold text-xs tracking-wider uppercase">
+              03 / RH FLOW
+            </div>
+</div>
+<h3 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]">
+            La paie ivoirienne, sans aspirine.
+          </h3>
+<p class="text-slate-600 text-lg leading-relaxed">
+            Calculez l'ITS, gérez la CNPS et la CMU en respectant scrupuleusement les derniers barèmes légaux. Vos déclarations sociales sont prêtes à être envoyées en fin de mois.
+          </p>
+<ul class="space-y-3.5 pt-2 text-sm font-semibold text-slate-700">
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-indigo-900 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Calcul automatique : CNPS, CMU, ITS et retenues légales</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-indigo-900 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Bordereaux de cotisation CNPS téléchargeables en 1 clic</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-indigo-900 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Fiches de paie digitalisées et pointage officiel par QR Code</span>
+</li>
+</ul>
+</div>
+<!-- Visuals Right: Spatial Composition (Dashboard Paie, Bulletin Officiel, Scanner QR) -->
+<div class="lg:col-span-7 perspective-container relative">
+<!-- Aura Lumineuse Indigo Foncé (10-15%) - AUCUN VERT -->
+<div class="absolute -inset-10 rounded-full blur-[140px] pointer-events-none bg-indigo-900/15"></div>
+<div class="relative transform-3d-left">
+<!-- Main RH Flow Dashboard Window -->
+<div class="rounded-2xl border border-slate-200/80 shadow-2xl shadow-indigo-950/20 bg-white p-2.5 overflow-hidden">
+<div class="flex items-center justify-between px-3 py-1.5 bg-slate-50 rounded-lg mb-2 border border-slate-100 text-[11px] text-slate-500 font-semibold">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-rose-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-indigo-900 inline-block"></span>
+<span class="ml-2 font-bold text-indigo-950">RH Flow · Traitement de la Paie Mensuelle</span>
+</div>
+<span class="text-[10px] font-bold text-indigo-900 bg-indigo-50 px-2 py-0.5 rounded">Net : 518 867 FCFA</span>
+</div>
+<img alt="Traitement de Paie RH Flow" class="w-full rounded-xl border border-slate-200/70 shadow-inner object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABaLBEDTEjQWFSYYCUUQqZd4d99XZ75imaNzvRM3W2z209d4vQcyMn3rdJYAkFDQFSnwkY7-4a2Uf9dHwjnmbzlEySXt0FfwxwFYh_dTRBhECGqQqwl0Kaa_Boze32qn61ZH7RdperTFYFgG2H0nylJQ05LkYXZpSbISr3XPlCgkvBOWqUck-tRDbdSMmmEsXivdv-O--_SAJkEew1SJGpjdp9_PyUwmoBLlx5bICv77TfrevZYpZXvKcVMfPd_AiQX98">
+</div>
+<!-- Overlapping Floating Bulletin de Salaire Officiel -->
+<div class="absolute -bottom-8 -right-4 sm:-right-8 w-1/2 sm:w-5/12 glass-panel p-2 rounded-2xl shadow-3d-floating border border-white animate-float z-20">
+<div class="flex items-center justify-between pb-1 mb-1 border-b border-slate-100 px-1">
+<span class="text-[9px] font-extrabold text-indigo-950 uppercase">Bulletin Officiel</span>
+<span class="text-[8px] font-bold text-indigo-700">CNPS · CMU · ITS</span>
+</div>
+<img alt="Bulletin de Salaire RH Flow" class="w-full rounded-lg shadow-sm border border-slate-200/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkt6GKKn6Mt1sM-6A_xICmKWmKw61Yy17NSc02DXmBx2slyAiqueEr_DLMt47vKuIoGi_AQVSogJbUa8oTLy-f-KELMTKSA0gkdYoFhfDUR7hm2VZ-hPsoItB1BRET4K3ZRDZUBnVYLxNxqb-SxKLhA-Bl-uaD6mhYUVYPkwOXZ9-hB8ESNqebf-dolmEN_GBw9Wj_EUd6LUtQUkxm9GT0Waag9Xvu3mBIYPrmz0hlplcHLXj8zRrZ2qL4U3avvhzVUcQ">
+</div>
+<!-- Overlapping Floating Pointage QR Screen -->
+<div class="absolute -top-8 -left-4 sm:-left-6 w-44 sm:w-52 glass-panel p-2 rounded-2xl shadow-3d-floating border border-white animate-float-delayed z-20">
+<div class="flex items-center justify-between pb-1 mb-1 border-b border-slate-100 px-1">
+<span class="text-[9px] font-extrabold text-indigo-900">Pointage Mobile</span>
+<span class="text-[8px] bg-indigo-100 text-indigo-900 font-bold px-1 rounded">QR Code</span>
+</div>
+<img alt="Système de Pointage QR Code RH Flow" class="w-full rounded-lg shadow-sm border border-slate-200/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIbOhY952N6V2hOV_JHRNHoBmnnysvIh3RXHuiTw0aA8Wq0HPA3WpyWTUOrRjJu-qmqWBSzabiulKATqACandVM5JaP_0eRq1Qqq2FlghGZ6_8a0ZL91jv3ALKfVCM6tgpKP-KJ9YebEQw0dYUFxRPgJYfJHeNJlz_iEMJJewaTnygKTJt6pIYw5Sm9H-AANqQziKpDjUcRKILPgaPxyHDNInm-v8ZRj3E2uFzW7IKRcGQokNXygLDiFOXJa4xmKT15MI">
+</div>
+<!-- Badges Glassmorphism Flottants -->
+<div class="absolute -top-4 right-10 glass-panel px-3.5 py-1.5 rounded-full shadow-lg border border-white flex items-center gap-2 text-xs font-bold text-indigo-900 z-20">
+<span class="">🛡️</span>
+<span class="">Barèmes DGI &amp; CNPS 2026</span>
+</div>
+<div class="absolute bottom-10 left-6 glass-panel px-3 py-1 rounded-full shadow-lg border border-white flex items-center gap-1.5 text-xs font-bold text-indigo-950 z-20">
+<span class="">✨</span>
+<span class="">0 Anomalie Détectée</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- BLOC 4: LEGAL FLOW (3D Gauche, Texte Droite) -->
+<div class="min-h-[85vh] py-20 flex items-center border-b border-slate-100" data-purpose="software-legal-flow" id="legal-flow">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Visuals Left -->
+<div class="lg:col-span-7 order-2 lg:order-1 perspective-container relative">
+<!-- Aura Lumineuse Violet Royal (10-15%) -->
+<div class="absolute -inset-10 rounded-full blur-[140px] pointer-events-none bg-purple-700/15"></div>
+<div class="relative transform-3d-right">
+<!-- Main Legal Flow Window -->
+<div class="rounded-2xl border border-slate-200/80 shadow-2xl shadow-purple-700/20 bg-white p-2.5 overflow-hidden">
+<div class="flex items-center justify-between px-3 py-1.5 bg-slate-50 rounded-lg mb-2 border border-slate-100 text-[11px] text-slate-500 font-semibold">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-rose-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-purple-600 inline-block"></span>
+<span class="ml-2 font-bold text-purple-950">Legal Flow · Portail de Conformité Fiscale &amp; Sociale</span>
+</div>
+<span class="text-[10px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded">DGI / CNPS / CMU</span>
+</div>
+<img alt="Portail Legal Flow Entreprise" class="w-full rounded-xl border border-slate-200/70 shadow-inner object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMVh8V6VYJ8367lipTzmwUxfq0NNjRnJpUEbDEpUjRXDa7hCIz564Owl0gVrLJuI0dwCMndcjQpwz8Jx9YPu6wWhvtSFNiwbt1Q0A0TslalX_fMcl5lQV-K_iTEnrxzF5aaN7oFFldAtPUKWGkOAF6s3Rxdpp8AQdNes4X0v6-X2EG_VHx-5ELu7jYKcxB098n_Hc0DldvIf5nWuYrpD32JErHrKTmPit4akHGqI3x1YKuzYlEyPg9F4ydSwwCxVrEltg">
+</div>
+<!-- Floating WhatsApp / Tax Alert Card -->
+<div class="absolute -bottom-8 -left-4 sm:-left-6 w-80 glass-panel p-4 rounded-2xl shadow-3d-floating border border-white animate-float z-20 space-y-2.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-purple-600 animate-pulse"></span>
+<span class="text-[10px] font-extrabold text-purple-800 uppercase">💬 Alerte WhatsApp DGI</span>
+</div>
+<span class="text-[9px] text-slate-400 font-semibold">Reçue à 08h30</span>
+</div>
+<p class="text-xs font-semibold text-slate-800 leading-snug">
+                Déclaration TVA &amp; Acompte IS validés. <span class="text-purple-700 font-bold">0 pénalité garantie</span>.
+              </p>
+<div class="flex items-center justify-between pt-1 border-t border-slate-100 text-[10px]">
+<span class="text-slate-500 font-medium">Veille fiscale OHADA</span>
+<span class="font-extrabold text-purple-700">À jour 2026 ✓</span>
+</div>
+</div>
+<!-- Floating Badge -->
+<div class="absolute -top-4 right-8 glass-panel px-3.5 py-1.5 rounded-full shadow-lg border border-white flex items-center gap-2 text-xs font-bold text-purple-700 animate-float-delayed z-20">
+<span class="">⚖️</span>
+<span class="">Registre Juridique Centralisé</span>
+</div>
+</div>
+</div>
+<!-- Content Right -->
+<div class="lg:col-span-5 order-1 lg:order-2 space-y-6">
+<div class="flex items-center space-x-3">
+<div class="w-24 h-24 rounded-3xl bg-white p-2 shadow-2xl shadow-purple-700/20 border border-purple-100 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"><img alt="Logo 3D Legal Flow" class="w-full h-full object-contain filter drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCer5VUCTRAAe86qjb_3t5IPY8A_SLUxLynjqYQZP_DOwbAEU1PTzgdNAxoNVN6tUq-QMqK6phTJYHnfEu3og4QFm99GPrDRf8wkha0aApefSQZU6BMTNDTOkAT3D_Zk0hQ06L9taDYSd5QkSJJA9K_V9gw-5AJ7QE1ldz-TohRWaMtPheDY44tP_flZwtXeugnYHPkp8AxfCQ4NLbixebpbVNN7QaR6b3bb_0mr3EDBWv9dJbrAmGc48jYiANsJzoW1Uw"></div>
+<div class="inline-flex px-3 py-1 rounded-full bg-purple-50 text-purple-700 font-semibold text-xs tracking-wider uppercase">
+              04 / LEGAL FLOW
+            </div>
+</div>
+<h3 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]">
+            Zéro oubli. Zéro pénalité.
+          </h3>
+<p class="text-slate-600 text-lg leading-relaxed">
+            On s'occupe de retenir les dates critiques pour vous. Recevez un message avant chaque échéance fiscale et juridique pour agir au bon moment.
+          </p>
+<ul class="space-y-3.5 pt-2 text-sm font-semibold text-slate-700">
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-purple-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Alertes personnalisées : TVA, CNPS, Acompte d'impôt sur les bénéfices</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-purple-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Registre juridique d'entreprise centralisé (statuts, PV d'AG, baux)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-purple-700 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Veille réglementaire OHADA et loi de finances ivoirienne</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- BLOC 5: TASK FLOW (Texte Gauche, 3D Droite) -->
+<div class="min-h-[85vh] py-20 flex items-center last:border-b-0" data-purpose="software-task-flow" id="task-flow">
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+<!-- Content Left -->
+<div class="lg:col-span-5 space-y-6">
+<div class="flex items-center space-x-3">
+<div class="w-24 h-24 rounded-3xl bg-white p-2 shadow-2xl shadow-neutral-900/20 border border-neutral-200/80 flex-shrink-0 flex items-center justify-center transition-transform duration-300 hover:scale-105"><img alt="Logo 3D Task Flow" class="w-full h-full object-contain filter drop-shadow-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMqrHcCgyAqxGGLbiMNCy1jEpIbaqVRYZoZntv05QrA-13lBq--XccvOzjiTbnzNyx6doG9VRk0UX3EPkCdBhQ5NnIXiQabLPEcg5m4bFqIwvFsNFUhC44NahA2KQeTsYK7fbtiqk0It6d_RSdXRpJTrz7QlYjp43Vqjv9F9ovteQC7sYAiIQ2m8Bmeuc_w-tpChv9s1P1TlENa6eMvbcX-9FgH6p8D6z60K9SophmvtquTJpTK8ViXdakrgGfP2kbUAM"></div>
+<div class="inline-flex px-3 py-1 rounded-full bg-neutral-100 text-neutral-900 font-semibold text-xs tracking-wider uppercase">
+              05 / TASK FLOW
+            </div>
+</div>
+<h3 class="text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.15]">
+            Le cerveau de votre entreprise.
+          </h3>
+<p class="text-slate-600 text-lg leading-relaxed">
+            Suivez qui fait quoi, et quand. Le cockpit parfait pour le dirigeant de PME qui veut tout piloter en un coup d'œil sans micro-management épuisant.
+          </p>
+<ul class="space-y-3.5 pt-2 text-sm font-semibold text-slate-700">
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-neutral-900 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Cockpit collaboratif synchronisé avec vos commandes clients</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-neutral-900 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Attribution de rôles clairs, délais stricts et alertes de retard</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-5 h-5 rounded-full bg-neutral-900 text-white flex items-center justify-center text-xs flex-shrink-0">✓</span>
+<span class="">Tableau de bord de rentabilité par mission et par pôle d'activité</span>
+</li>
+</ul>
+</div>
+<!-- Visuals Right: Layered Task Cockpits + Carbone Aura -->
+<div class="lg:col-span-7 perspective-container relative">
+<!-- Aura Lumineuse Carbone (10-15%) -->
+<div class="absolute -inset-10 rounded-full blur-[140px] pointer-events-none bg-neutral-900/10"></div>
+<div class="relative transform-3d-left">
+<!-- Back / Top Window: Global Task Cockpit -->
+<div class="rounded-2xl border border-slate-200/80 shadow-2xl shadow-neutral-900/20 bg-white p-2.5 overflow-hidden">
+<div class="flex items-center justify-between px-3 py-1.5 bg-slate-50 rounded-lg mb-2 border border-slate-100 text-[11px] text-slate-500 font-semibold">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-rose-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-slate-800 inline-block"></span>
+<span class="ml-2 font-bold text-slate-800">Task Flow · Vue d'ensemble &amp; Métriques Cabinet</span>
+</div>
+<span class="text-[10px] font-bold text-slate-800 bg-slate-200/70 px-2 py-0.5 rounded">889 Tâches traitées</span>
+</div>
+<img alt="Vue d'ensemble Task Flow" class="w-full rounded-xl border border-slate-200/70 shadow-inner object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkTP5yzlrc7oEhhyJWWS0QyyoFAjmzMDZHcl-nd860nAWbzoSMZ_N5MZqZxDRzF4ng7loa7XjCgUIxcl9DnmXrpUTaxqM8MfZBHEL3pEOuakvR0UYMxh0-GGEQewNX2NIJqtE3oHEJYL57qhxx7XJ9RX-g4wLv82nLOuwtTwrEonLY8c3fo9yv4Vw4quZDvQ2Avy0Vr9uKNSFZaQFIwGPcvh_2b9soRG6IMjvPrCk9pAf7cvZ3fgrPX0CrQpi45JLN_8">
+</div>
+<!-- Foreground Overlapping Window: Operator Dashboard -->
+<div class="absolute -bottom-8 -right-4 sm:-right-8 w-4/5 sm:w-3/4 glass-panel p-2 rounded-2xl shadow-3d-floating border border-white animate-float z-20">
+<div class="flex items-center justify-between pb-1 mb-1 border-b border-slate-100 px-2">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-neutral-900"></span>
+<span class="text-[10px] font-extrabold text-slate-800 uppercase">Tâches en cours · Affectations directes</span>
+</div>
+<span class="text-[9px] font-bold text-slate-600">Ouattara Yaya</span>
+</div>
+<img alt="Cockpit Opérateur Task Flow" class="w-full rounded-xl border border-slate-200/60 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQeDOSnM2hBfPrHtbPB1wleD3lSv2E4KitTCrOqvlj2zrweV63atUUZTefNrksKNlyDu_Q72yo5IZsOJ0IpNBw0s_5XwUh_vdtPJ1tu70WsdE-1itaqzKj2QvBYczu4Dp0qqy8WpGiWBoKUeuIcklfs5xp5rDRJzROYGx8QsxhpLNNa7k8-DQw0whESay7o7mPywO_B_s5DSUnJjELY11L9vxMb2uPHfD5wTe1ddUN9L-vd0bZ7pWjQCUw4VOnazW6LUU">
+</div>
+<!-- Badges Glassmorphism Flottants -->
+<div class="absolute -top-4 left-6 glass-panel px-3.5 py-1.5 rounded-full shadow-lg border border-white flex items-center gap-2 text-xs font-bold text-neutral-900 animate-float-delayed z-20">
+<span class="">📌</span>
+<span class="">Cockpit des Opérations en Cours</span>
+</div>
+<div class="absolute bottom-12 -left-4 glass-panel px-3 py-1.5 rounded-full shadow-lg border border-white flex items-center gap-1.5 text-xs font-bold text-neutral-900 z-20">
+<span class="">⚡</span>
+<span class="">27/37 Tâches Terminées</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: 5 Logiciels Section -->
+<!-- BEGIN: EcosystemSection -->
+<section class="py-24 bg-[#0A1128] text-white relative overflow-hidden" data-purpose="nodal-ecosystem" id="ecosysteme">
+<!-- Starfield/Grid Background Accent -->
+<div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#ffffff15_1px,transparent_1px),linear-gradient(to_bottom,#ffffff15_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+<div class="absolute w-[600px] h-[600px] bg-blue-600/20 blur-[120px] rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<span class="inline-block px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-400 text-xs font-extrabold uppercase tracking-widest border border-blue-400/30">
+          L'Écosystème Nodal Unique
+        </span>
+<h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          Plus qu'un logiciel.<br>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-indigo-300">
+            Un moteur économique local.
+          </span>
+</h2>
+<p class="text-slate-300 text-base sm:text-lg">
+          Pensé par des experts ivoiriens, pour les PME ivoiriennes. La Suite Flow vous connecte directement à votre expert-comptable, aux centres de gestion agréés et permet de dynamiser vos échanges B2B.
+        </p>
+</div>
+<!-- Bento Grid / 3D Nodal Center -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+<!-- Card 1: Consultance Flow -->
+<div class="glass-panel-dark p-8 rounded-3xl border border-white/10 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-2xl bg-blue-500/20 border border-blue-400/30 flex items-center justify-center text-blue-400 font-bold text-xl group-hover:scale-110 transition-transform">
+              🏛️
+            </div>
+<h3 class="text-xl font-black text-white">Consultance Flow</h3>
+<p class="text-slate-300 text-sm leading-relaxed">
+              Donnez un accès sécurisé et certifié à votre cabinet comptable &amp; commissaire aux comptes agréé ONECCA. Fini les allers-retours de classeurs papier.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 text-xs font-bold text-blue-400 flex items-center gap-1">
+<span class="">Connexion ONECCA &amp; CGA</span> →
+          </div>
+</div>
+<!-- Central Core Card: Suite Flow Core -->
+<div class="glass-panel-dark p-8 rounded-3xl border-2 border-blue-500/60 shadow-glow-blue flex flex-col items-center justify-center text-center relative overflow-hidden group">
+<div class="absolute -top-12 -right-12 w-40 h-40 bg-blue-600/30 rounded-full blur-2xl"></div>
+<div class="w-24 h-24 mb-6 relative">
+<div class="absolute inset-0 bg-blue-500 rounded-3xl blur-xl opacity-60 animate-pulse"></div>
+<img alt="Noyau Suite Flow" class="w-full h-full object-contain relative z-10 group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkYxgRmuQJSl3-k5iOt2ZLu34ZKsLBsTIXXXoYTGwwxDztH4ssgGDaPRaX6parPlp1UT-K8CLTibaGxew5MyTQc1Rmj-jDAzyJywYIyb5G8epvPWiPUfCNW5bOGgEOKnBJuoSxmaWFtvG6ooe-4DmIhqH4ZlkLF1V7Yz4T_diHrMLy_m7al--3YyArJsHBUTCQpE9sQD2g73v4yqMPs6-ZexOSW5DmGxhzqhknyDW5AEpeep_yiEW8TswXqbOyXDFMdFU">
+</div>
+<span class="text-xs font-extrabold text-cyan-400 uppercase tracking-widest mb-1">Noyau Central</span>
+<h3 class="text-2xl font-black text-white mb-2">LA SUITE FLOW</h3>
+<p class="text-slate-300 text-xs leading-relaxed max-w-xs mb-4">
+            Le pont d'intelligence entre toutes vos filiales, vos données financières et vos partenaires d'affaires.
+          </p>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-600/30 text-blue-300 text-xs font-bold border border-blue-400/30">
+<span class="w-2 h-2 rounded-full bg-cyan-400"></span> 5 Modules • 1 Seule Base
+          </div>
+</div>
+<!-- Card 2: Business Flow & Wallet -->
+<div class="glass-panel-dark p-8 rounded-3xl border border-white/10 hover:border-blue-500/50 transition-all duration-300 flex flex-col justify-between group">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-2xl bg-cyan-500/20 border border-cyan-400/30 flex items-center justify-center text-cyan-400 font-bold text-xl group-hover:scale-110 transition-transform">
+              🤝
+            </div>
+<h3 class="text-xl font-black text-white">Business Flow &amp; Wallet</h3>
+<p class="text-slate-300 text-sm leading-relaxed">
+              Place de marché B2B intégrée entre entreprises abonnées en Côte d'Ivoire. Règlements directs compatibles Wave, Orange Money, MTN et virements interbancaires BCEAO.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-white/10 text-xs font-bold text-cyan-400 flex items-center gap-1">
+<span class="">Réseau B2B &amp; Mobile Money</span> →
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: EcosystemSection -->
+<!-- BEGIN: SocialProofAndROI -->
+<section class="py-24 bg-white relative" data-purpose="social-proof-roi" id="temoignages">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-extrabold uppercase tracking-wider">
+          Le Mur des Victoires
+        </span>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+          Ce que les dirigeants ivoiriens constatent sur le terrain.
+        </h2>
+<p class="text-slate-600 text-base sm:text-lg">
+          Des gains de temps palpables et une sérénité fiscale garantie jour après jour.
+        </p>
+</div>
+<!-- Masonry-like Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+<!-- Card 1: Chiffre Choc -->
+<div class="glass-panel p-8 rounded-3xl shadow-3d-lift border border-slate-200/80 space-y-4">
+<div class="text-5xl sm:text-6xl font-black text-blue-600 tracking-tight">
+            45 min
+          </div>
+<h3 class="text-lg font-bold text-slate-900">Temps moyen de rapprochement bancaire</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+            Là où un comptable passait auparavant 3 jours complets à éplucher les relevés de comptes manuellement.
+          </p>
+<div class="text-xs font-semibold text-emerald-600 flex items-center gap-1.5 pt-2">
+<span class="">⚡️ Productivité multipliée par 8</span>
+</div>
+</div>
+<!-- Card 2: Realistic WhatsApp Message Card -->
+<div class="bg-[#ECE5DD] p-6 rounded-3xl shadow-3d-lift border border-slate-300 relative">
+<div class="flex items-center space-x-3 mb-4 pb-3 border-b border-[#00000010]">
+<div class="w-10 h-10 rounded-full bg-[#128C7E] text-white flex items-center justify-center font-bold text-sm">
+              KT
+            </div>
+<div>
+<p class="text-xs font-bold text-slate-900">Kouadio T.</p>
+<p class="text-[11px] text-slate-500">Gérant de Quincaillerie · Treichville</p>
+</div>
+</div>
+<div class="bg-white rounded-2xl rounded-tl-none p-4 shadow-sm text-xs text-slate-800 space-y-2 border border-slate-100">
+<p class="leading-relaxed">
+              « Franchement merci l'équipe ! Grâce à <strong>Sell Flow</strong>, j'ai passé mon contrôle DGI sans aucune amende la semaine passée ! Le vérificateur a juste scanné le QR code sur trois factures et tout était propre sur le serveur fiscal. Soulagement total. »
+            </p>
+<div class="text-[10px] text-slate-400 text-right">14:22 • Lu ✓✓</div>
+</div>
+</div>
+<!-- Card 3: Graphic Productivity -->
+<div class="glass-panel p-8 rounded-3xl shadow-3d-lift border border-slate-200/80 space-y-4">
+<div class="text-5xl sm:text-6xl font-black text-indigo-600 tracking-tight">
+            -70%
+          </div>
+<h3 class="text-lg font-bold text-slate-900">De temps perdu sur la saisie manuelle</h3>
+<p class="text-slate-600 text-sm leading-relaxed">
+            Vos collaborateurs se concentrent sur la vente et la relation client plutôt que sur la recopie de formulaires.
+          </p>
+<div class="w-full bg-slate-100 rounded-full h-2.5 overflow-hidden mt-3">
+<div class="bg-indigo-600 h-2.5 rounded-full w-[70%]"></div>
+</div>
+</div>
+<!-- Card 4: DAF Testimonial -->
+<div class="glass-panel p-8 rounded-3xl shadow-3d-lift border border-slate-200/80 space-y-3 md:col-span-2">
+<div class="flex items-center space-x-1 text-amber-400 text-sm">
+<span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span><span class="">★</span>
+</div>
+<blockquote class="text-slate-800 font-bold text-base sm:text-lg leading-relaxed">
+            « La paie de nos 85 salariés est désormais générée en 12 minutes chrono avec les bordereaux CNPS et CMU automatiques. Nous avons réduit nos litiges prud'homaux à zéro. »
+          </blockquote>
+<div class="pt-2 flex items-center justify-between text-xs text-slate-500">
+<div class="">
+<strong class="text-slate-900 font-bold">Awa D.</strong> — Directrice Administrative &amp; Financière, Groupe BTP (Cocody, Abidjan)
+            </div>
+<span class="text-blue-600 font-extrabold">Cliente Suite Flow depuis 2 ans</span>
+</div>
+</div>
+<!-- Card 5: Official Stamp -->
+<div class="bg-gradient-to-br from-blue-900 to-indigo-950 text-white p-8 rounded-3xl shadow-3d-lift flex flex-col justify-between">
+<div class="space-y-2">
+<div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center text-2xl">
+              🛡️
+            </div>
+<h4 class="text-xl font-black">100% Conforme DGI Côte d'Ivoire</h4>
+<p class="text-slate-300 text-xs leading-relaxed">
+              Mises à jour fiscales automatiques incluses à chaque nouvelle loi de finances.
+            </p>
+</div>
+<div class="pt-4 mt-4 border-t border-white/10 text-[11px] text-cyan-300 font-bold">
+            Sceau de garantie DC-KNOWING
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SocialProofAndROI -->
+<!-- BEGIN: PricingSection -->
+<section class="py-24 bg-slate-50 relative overflow-hidden" data-purpose="pricing-plans" id="tarifs">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14 space-y-4">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-blue-100 text-blue-800 text-xs font-extrabold uppercase tracking-wider">
+          Transparence Absolue
+        </span>
+<h2 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+          Un investissement rentable dès le 1<sup>er</sup> mois.
+        </h2>
+<p class="text-slate-600 text-base sm:text-lg">
+          Bien moins cher que vos pénalités de retard et vos erreurs de facturation.
+        </p>
+</div>
+<!-- Pricing Cards Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+<!-- PLAN 1: SOLO -->
+<div class="glass-panel p-8 rounded-3xl shadow-3d-lift border border-slate-200/80 flex flex-col justify-between">
+<div class="space-y-6">
+<div>
+<span class="text-xs font-extrabold uppercase tracking-wider text-slate-400">Pour démarrer</span>
+<h3 class="text-2xl font-black text-slate-900 mt-1">SOLO</h3>
+<p class="text-xs text-slate-500 mt-2">Idéal pour les consultants, prestataires de service et auto-entrepreneurs.</p>
+</div>
+<div class="pb-4 border-b border-slate-100">
+<span class="text-4xl font-black text-slate-900">30 000</span>
+<span class="text-slate-500 font-bold text-xs uppercase"> FCFA / mois</span>
+</div>
+<ul class="space-y-3 text-xs font-semibold text-slate-600">
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> <strong>3 logiciels au choix</strong> (ex: Sell + Compta + Task)
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Facturation FNE normalisée illimitée
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> 1 Utilisateur Administrateur
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Support standard par email
+              </li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full py-3 px-4 rounded-xl border-2 border-slate-300 hover:border-slate-400 font-bold text-xs text-slate-700 text-center block transition-all" href="#audit-cta">
+              Choisir le Pack Solo
+            </a>
+</div>
+</div>
+<!-- PLAN 2: BUSINESS (HERO HIGHLIGHTED) -->
+<div class="bg-white p-8 rounded-3xl shadow-glow-blue border-2 border-blue-600 flex flex-col justify-between relative scale-105 z-10">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-[10px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow-md">
+            Le Choix des PME Ivoiriennes
+          </div>
+<div class="space-y-6 pt-2">
+<div>
+<span class="text-xs font-extrabold uppercase tracking-wider text-blue-600">L'arsenal complet</span>
+<h3 class="text-3xl font-black text-slate-900 mt-1">BUSINESS</h3>
+<p class="text-xs text-slate-500 mt-2">La configuration recommandée pour piloter sereinement une PME en pleine croissance.</p>
+</div>
+<div class="pb-4 border-b border-slate-100">
+<span class="text-4xl font-black text-blue-600">75 000</span>
+<span class="text-slate-500 font-bold text-xs uppercase"> FCFA / mois</span>
+</div>
+<ul class="space-y-3.5 text-xs font-semibold text-slate-700">
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> <strong>Les 5 logiciels inclus sans restriction</strong>
+</li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Jusqu'à 10 collaborateurs connectés
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Passerelle directe avec votre Expert-Comptable (ONECCA)
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Alertes fiscales par WhatsApp personnalisées
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Support WhatsApp prioritaire 6j/7
+              </li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 font-extrabold text-xs text-white text-center block shadow-lg shadow-blue-500/30 transition-all" href="#audit-cta">
+              Démarrer avec le Pack Business
+            </a>
+</div>
+</div>
+<!-- PLAN 3: PREMIUM VIP -->
+<div class="glass-panel p-8 rounded-3xl shadow-3d-lift border border-slate-200/80 flex flex-col justify-between">
+<div class="space-y-6">
+<div>
+<span class="text-xs font-extrabold uppercase tracking-wider text-slate-400">Accompagnement d'élite</span>
+<h3 class="text-2xl font-black text-slate-900 mt-1">PREMIUM VIP</h3>
+<p class="text-xs text-slate-500 mt-2">Pour les entreprises multi-établissements et celles désirant un suivi sur mesure.</p>
+</div>
+<div class="pb-4 border-b border-slate-100">
+<span class="text-4xl font-black text-slate-900">135 000</span>
+<span class="text-slate-500 font-bold text-xs uppercase"> FCFA / mois</span>
+</div>
+<ul class="space-y-3 text-xs font-semibold text-slate-600">
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> <strong>Tout débloqué en illimité</strong>
+</li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Multi-établissements &amp; Multi-sociétés
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Accompagnement VIP dédié par le cabinet DC-KNOWING
+              </li>
+<li class="flex items-center gap-2">
+<span class="text-blue-600 font-bold">✓</span> Formation sur site pour toutes vos équipes
+              </li>
+</ul>
+</div>
+<div class="pt-8">
+<a class="w-full py-3 px-4 rounded-xl border-2 border-slate-300 hover:border-slate-400 font-bold text-xs text-slate-700 text-center block transition-all" href="#audit-cta">
+              Contacter la Direction VIP
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: PricingSection -->
+<!-- BEGIN: FinalCTA -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto" data-purpose="final-call-to-action" id="audit-cta">
+<div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-blue-900 rounded-3xl p-8 sm:p-14 text-white text-center relative overflow-hidden shadow-2xl">
+<!-- Ambient Lighting Bubbles -->
+<div class="absolute -top-24 -left-24 w-80 h-80 bg-blue-400/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-80 h-80 bg-cyan-400/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-3xl mx-auto space-y-6 relative z-10">
+<span class="inline-block px-4 py-1 rounded-full bg-white/10 text-cyan-200 text-xs font-bold uppercase tracking-wider border border-white/20">
+          Passez à la vitesse supérieure
+        </span>
+<h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-tight">
+          Prêt à laisser couler l'information sans friction ?
+        </h2>
+<p class="text-blue-100 text-base sm:text-lg max-w-2xl mx-auto font-normal">
+          Ne bouleversez pas vos habitudes demain. Commencez simplement par faire le point aujourd'hui avec un expert opérationnel DC-KNOWING.
+        </p>
+<div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-white text-slate-900 font-black text-sm hover:bg-blue-50 shadow-xl transition-all duration-300 flex items-center justify-center gap-2 group" href="tel:2722421443">
+<span class="">Demander mon Audit Flash Gratuit</span>
+<span class="group-hover:translate-x-1 transition-transform">→</span>
+</a>
+<a class="w-full sm:w-auto px-6 py-4 rounded-2xl bg-white/15 hover:bg-white/25 text-white font-bold text-sm border border-white/20 transition-all text-center" href="mailto:dcknowing@gmail.com">
+            Écrire à nos Conseillers
+          </a>
+</div>
+<p class="text-xs text-blue-200 font-medium pt-2">
+          Sans engagement • 30 minutes de diagnostic fiscal &amp; opérationnel en présentiel ou visio
+        </p>
+</div>
+</div>
+</section>
+<!-- END: FinalCTA -->
+<!-- BEGIN: MainFooter -->
+<footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800" data-purpose="page-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+<!-- Column 1: Identity -->
+<div class="space-y-4 md:col-span-1">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center">
+<img alt="Suite Flow" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB44ah1sXGSpwIxVLO6tOTsmdrZAeCTe2VKplGyQr0QpevVNxptbUKqt8Eaz1NI9JM5WNX6KTZFVcl0t8NQaM-hMPDV0FP4DqZbRRaoACiA0wbeqZuCsvwaNqCPJuMmGrkBJ5DGnC1JK0mvPOKpxZAJ5akdmgZqo2bQlCVzTbJWwCwILU4Yngj1Gj7GG9HPcKsWSUyrkKnufG5qXtoV9vByM3GRkf0NBluN5scI-TGLbTVimRb1Ba5liTLSytPuXV5_dh8">
+</div>
+<span class="text-white font-extrabold text-lg">SUITE FLOW</span>
+</div>
+<p class="text-xs leading-relaxed">
+            Propulsé par DC-KNOWING. Conçu pour booster l'économie ivoirienne par la digitalisation fiscale et opérationnelle.
+          </p>
+<div class="text-xs text-slate-500 font-bold">
+            Abidjan, Côte d'Ivoire 🇨🇮
+          </div>
+</div>
+<!-- Column 2: Quick Links -->
+<div class="space-y-3 text-xs">
+<h5 class="text-white font-bold uppercase tracking-wider">Les Logiciels</h5>
+<ul class="space-y-2">
+<li class=""><a class="hover:text-white transition-colors" href="#sell-flow">Sell Flow (Facturation FNE)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#compta-flow">Compta Flow (SYSCOHADA)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#rh-flow">RH Flow (Paie &amp; CMU)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#legal-flow">Legal Flow (Alertes Fiscales)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#task-flow">Task Flow (Pilotage &amp; Kanban)</a></li>
+</ul>
+</div>
+<!-- Column 3: Legal & Ecosystem -->
+<div class="space-y-3 text-xs">
+<h5 class="text-white font-bold uppercase tracking-wider">Conformité &amp; Partenaires</h5>
+<ul class="space-y-2">
+<li class=""><a class="hover:text-white transition-colors" href="#ecosysteme">Réseau ONECCA Côte d'Ivoire</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#ecosysteme">Centres de Gestion Agréés (CGA)</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Politique de Confidentialité</a></li>
+<li class=""><a class="hover:text-white transition-colors" href="#">Sécurité des Données Cloud</a></li>
+</ul>
+</div>
+<!-- Column 4: Contact -->
+<div class="space-y-3 text-xs">
+<h5 class="text-white font-bold uppercase tracking-wider">Contact &amp; Assistance</h5>
+<p class="flex items-center gap-2">
+<span class="text-slate-200 font-semibold">Tél :</span>
+<a class="hover:text-white transition-colors" href="tel:2722421443">27 22 42 14 43</a>
+</p>
+<p class="flex items-center gap-2">
+<span class="text-slate-200 font-semibold">Email :</span>
+<a class="hover:text-white transition-colors" href="mailto:dcknowing@gmail.com">dcknowing@gmail.com</a>
+</p>
+<div class="pt-2">
+<span class="inline-block px-3 py-1 bg-slate-800 text-emerald-400 rounded-lg font-bold text-[11px]">
+              Support Ouvert : Lun - Ven 08h - 18h
+            </span>
+</div>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+<p class="">© 2026 DC-KNOWING. Tous droits réservés. Suite Flow est une marque déposée.</p>
+<p class="mt-2 sm:mt-0 font-medium">Fait avec fierté à Abidjan pour nos entrepreneurs.</p>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+
+
+</body></html>

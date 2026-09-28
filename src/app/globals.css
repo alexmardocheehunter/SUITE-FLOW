@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #FFFFFF;
+  color: #0F172A;
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Pastille onglet : coins hauts concaves */
+.notch-scoop {
+  --r: 22px;
+  -webkit-mask:
+    radial-gradient(circle var(--r) at 0 0, transparent 98%, #000 100%),
+    radial-gradient(circle var(--r) at 100% 0, transparent 98%, #000 100%);
+  -webkit-mask-composite: source-in;
+  mask:
+    radial-gradient(circle var(--r) at 0 0, transparent 98%, #000 100%),
+    radial-gradient(circle var(--r) at 100% 0, transparent 98%, #000 100%);
+  mask-composite: intersect;
+}
